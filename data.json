@@ -1,0 +1,1142 @@
+[
+    [
+        {
+            "access": "Yes",
+            "announced": "October 29, 2019",
+            "creator": "Facebook",
+            "languages": "English",
+            "name": "BART",
+            "parameters": "400M",
+            "references": {
+                "arxiv": "1910.13461"
+            },
+            "trained_on": "RoBERTa",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "May 28, 2021",
+            "creator": "Google",
+            "languages": "101",
+            "name": "ByT5",
+            "parameters": "13B",
+            "references": {
+                "arxiv": "2105.13626"
+            },
+            "trained_on": "mC4",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "July 5, 2021",
+            "creator": "Baidu",
+            "languages": "Chinese",
+            "name": "ERNIE 3.0",
+            "parameters": "10B",
+            "references": {
+                "arxiv": "2107.02137"
+            },
+            "trained_on": "ERNIE 3.0",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "December 23, 2021",
+            "creator": "Baidu",
+            "languages": "Chinese",
+            "name": "ERNIE 3.0 Titan",
+            "parameters": "260B",
+            "references": {
+                "arxiv": "2112.12731"
+            },
+            "trained_on": "ERNIE 3.0",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "April 18, 2021",
+            "creator": "Google",
+            "languages": "English",
+            "name": "LM-adapted T5",
+            "parameters": "11B",
+            "references": {
+                "arxiv": "2104.08691"
+            },
+            "trained_on": "C4 (more training)",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "January 22, 2020",
+            "creator": "Facebook",
+            "languages": "25",
+            "name": "mBART",
+            "parameters": "0.68B",
+            "references": {
+                "arxiv": "2001.08210"
+            },
+            "trained_on": "CC25",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "October 22, 2020",
+            "creator": "Google",
+            "languages": "101",
+            "name": "mT5",
+            "parameters": "13B",
+            "references": "[7]",
+            "trained_on": "mC4",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "February 24, 2020",
+            "creator": "Google",
+            "languages": "English",
+            "name": "T5",
+            "parameters": "11B",
+            "references": "[8][9]",
+            "trained_on": "C4",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "May 10, 2022",
+            "creator": "Google",
+            "languages": "English",
+            "name": "UL2",
+            "parameters": "20B",
+            "references": "[10][11]",
+            "trained_on": "C4",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "August 5, 2022",
+            "creator": "Meta",
+            "finetuning": "T5+LM (Retrieval-augmented)",
+            "languages": "English",
+            "name": "ATLAS",
+            "parameters": "11B",
+            "references": "[12]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "October 20, 2022",
+            "creator": "Google",
+            "finetuning": "T5 (Instruction)",
+            "languages": "English",
+            "name": "Flan-T5",
+            "parameters": "11B",
+            "references": "[13]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 3, 2022",
+            "creator": "BigScience",
+            "finetuning": "mT5 (Multitask)",
+            "languages": "46",
+            "name": "mT0",
+            "parameters": "13B",
+            "references": "[14]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "April 16, 2022",
+            "creator": "Allen Institute for AI",
+            "finetuning": "mT5-XXL (Instruction)",
+            "languages": "54",
+            "name": "mTk-Instruct",
+            "parameters": "13B",
+            "references": "[15]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "October 15, 2021",
+            "creator": "BigScience",
+            "finetuning": "T5+LM (Multitask)",
+            "languages": "English",
+            "name": "T0, T0+, T0++",
+            "parameters": "11B",
+            "references": "[16]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "April 16, 2022",
+            "creator": "Allen Institute for AI",
+            "finetuning": "T5-XXL (Instruction)",
+            "languages": "English",
+            "name": "Tk-Instruct",
+            "parameters": "11B",
+            "references": "[15]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "February 28, 2023",
+            "creator": "Google",
+            "finetuning": "UL2 (Instruction)",
+            "languages": "English",
+            "name": "Flan-UL2",
+            "parameters": "20B",
+            "references": "[10][17]",
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "September 26, 2019",
+            "creator": "Google",
+            "languages": "English",
+            "name": "ALBERT",
+            "parameters": "17M",
+            "references": "[18]",
+            "trained_on": "BERT",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "October 11, 2018",
+            "creator": "Google",
+            "languages": "English",
+            "name": "BERT",
+            "parameters": "340M",
+            "references": "[19][20]",
+            "trained_on": [
+                "BERT (BookCorpus, English Wikipedia)"
+            ],
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 4, 2018",
+            "creator": "Google",
+            "languages": "104",
+            "name": "mBERT",
+            "parameters": "172M",
+            "references": "[21][22]",
+            "trained_on": "Wikipedia",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 4, 2018",
+            "creator": "Google",
+            "languages": "Chinese",
+            "name": "BERT-Base, Chinese",
+            "parameters": "102M",
+            "references": "[23][22]",
+            "trained_on": "Chinese Wikipedia",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "July 14, 2022",
+            "creator": "BERTIN Project",
+            "languages": "Spanish",
+            "name": "BERTIN",
+            "parameters": "355M",
+            "references": "[24]",
+            "trained_on": "mC4",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "June 5, 2020",
+            "creator": "Microsoft",
+            "languages": "English",
+            "name": "DeBERTa",
+            "parameters": "1.5B",
+            "references": "[25]",
+            "trained_on": ["BERT + 3 corpora"],
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 23, 2020",
+            "creator": "Google",
+            "languages": "English",
+            "name": "ELECTRA-Large",
+            "parameters": "334M",
+            "references": "[26]",
+            "trained_on": "XLNet",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "May 9, 2021",
+            "creator": "Google",
+            "languages": "English",
+            "name": "FNet",
+            "parameters": "238M",
+            "references": "[27]",
+            "trained_on": "C4",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "September 13, 2020",
+            "creator": "AI4Bharat",
+            "languages": "12",
+            "name": "IndicBERT",
+            "parameters": "33M",
+            "references": "[28]",
+            "trained_on": "IndicCorp",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 13, 2022",
+            "creator": "AI4Bharat",
+            "languages": "24",
+            "name": "IndicBERT v2",
+            "parameters": "278M",
+            "references": "[29]",
+            "trained_on": "IndicCorp v2",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 19, 2021",
+            "creator": "Google",
+            "languages": "17",
+            "name": "MuRIL",
+            "parameters": "236M",
+            "references": "[30]",
+            "trained_on": [
+                "OSCAR",
+                "Wikipedia"
+            ],
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "July 26, 2019",
+            "creator": [
+                "Facebook",
+                "University of Washington"
+            ],
+            "languages": "English",
+            "name": "RoBERTa",
+            "parameters": "355M",
+            "references": "[31]",
+            "trained_on": "BERT + 3 corpora",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "January 22, 2019",
+            "creator": "Facebook",
+            "languages": "15",
+            "name": "XLM-15",
+            "parameters": "250M",
+            "references": "[32][33]",
+            "trained_on": "Wikipedia",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "August 17, 2019",
+            "creator": "Facebook",
+            "languages": "17",
+            "name": "XLM-17",
+            "parameters": "570M",
+            "references": "[33]",
+            "trained_on": "Wikipedia",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "August 17, 2019",
+            "creator": "Facebook",
+            "languages": "100",
+            "name": "XLM-100",
+            "parameters": "570M",
+            "references": "[33]",
+            "trained_on": "Wikipedia",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 5, 2019",
+            "creator": "Facebook",
+            "languages": "100",
+            "name": "XLM-R",
+            "parameters": "550M",
+            "references": "[34]",
+            "trained_on": "CommonCrawl",
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "June 19, 2019",
+            "creator": [
+                "Carnegie Mellon University",
+                "Google Brain"
+            ],
+            "languages": "English",
+            "name": "XLNet-Large",
+            "parameters": "360M",
+            "references": "[35]",
+            "trained_on": "XLNet (BERT + 3 corpora)",
+            "type": "Encoder"
+        },
+        {
+            "access": "No",
+            "announced": "December 1, 2021",
+            "creator": "Anthropic",
+            "languages": "English",
+            "name": "Anthropic-LM",
+            "parameters": "52B",
+            "references": "[36]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "July 6, 2022",
+            "creator": "BigScience",
+            "languages": {
+                "human": 46,
+                "code": 13
+            },
+            "name": "BLOOM",
+            "parameters": "176B",
+            "references": "[37][38]",
+            "trained_on": "ROOTS",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "March 29, 2022",
+            "creator": "DeepMind",
+            "languages": "English",
+            "name": "Chinchilla",
+            "parameters": "70B",
+            "references": "[39]",
+            "trained_on": "MassiveText",
+            "type": "Decoder"
+        },
+        {
+            "access": "Requestable",
+            "announced": "September 19, 2022",
+            "creator": "Tsinghua University",
+            "languages": {
+                "code": 20
+            },
+            "name": "CodeGeex",
+            "parameters": "13B",
+            "references": "[40]",
+            "trained_on": [
+                "The Pile",
+                "CodeParrot"
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 25, 2022",
+            "creator": "Salesforce",
+            "languages": "Code",
+            "name": "CodeGen",
+            "parameters": "16.1B",
+            "references": "[41]",
+            "trained_on": "GitHub",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "July 7, 2021",
+            "creator": "OpenAI",
+            "languages": "Code",
+            "name": "Codex",
+            "parameters": "12B",
+            "references": "[42][43]",
+            "trained_on": "GitHub",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "November 15, 2021",
+            "creator": "Cohere",
+            "languages": "English",
+            "name": "Cohere large",
+            "parameters": "13.1B",
+            "references": "[44][45]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "February 28, 2022",
+            "creator": "Cohere",
+            "languages": "English",
+            "name": "Cohere xlarge",
+            "parameters": "52.4B",
+            "references": "[44][46]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "December 1, 2020",
+            "creator": "Tsinghua University",
+            "languages": "Chinese",
+            "name": "CPM-1",
+            "parameters": "2.6B",
+            "references": "[47][48]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 1, 2019",
+            "creator": "Microsoft",
+            "languages": "English",
+            "name": "DialoGPT",
+            "parameters": "762M",
+            "references": "[49]",
+            "trained_on": "Reddit",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "December 20, 2021",
+            "creator": "Meta",
+            "languages": "English",
+            "name": "FairSeq Dense",
+            "parameters": "13B",
+            "references": "[50][51]",
+            "trained_on": ["RoBERTa", "CC100"],
+            "type": "Decoder"
+        },
+        {
+            "access": "Requestable",
+            "announced": "December 20, 2021",
+            "creator": "Meta",
+            "languages": "English",
+            "name": "FairSeq Sparse",
+            "parameters": "1100B",
+            "tags": ["MoE"],
+            "references": "[50][51]",
+            "trained_on": ["RoBERTa", "CC100"],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 16, 2022",
+            "creator": "Meta",
+            "languages": "English",
+            "name": "Galactica",
+            "parameters": "120B",
+            "references": "[52]",
+            "trained_on": [
+                "Scientific papers",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "December 13, 2021",
+            "creator": "Google",
+            "languages": "English",
+            "name": "GLaM",
+            "parameters": "1200B",
+            "tags": ["MoE"],
+            "references": "[53]",
+            "trained_on": [
+                "News",
+                "books",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "August 4, 2022",
+            "creator": "Tsinghua University",
+            "languages": ["English", "Chinese"],
+            "name": "GLM-130B",
+            "parameters": "130B",
+            "references": "[54][55]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "December 8, 2021",
+            "creator": "DeepMind",
+            "languages": "English",
+            "name": "Gopher",
+            "parameters": "280B",
+            "references": "[56]",
+            "trained_on": "MassiveText",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "June 11, 2018",
+            "creator": "OpenAI",
+            "languages": "English",
+            "name": "GPT-1",
+            "parameters": "117M",
+            "references": "[57]",
+            "trained_on": "BookCorpus",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "February 14, 2019",
+            "creator": "OpenAI",
+            "languages": "English",
+            "name": "GPT-2",
+            "parameters": "1.558B",
+            "references": "[58]",
+            "trained_on": "WebText",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "May 28, 2020",
+            "creator": "OpenAI",
+            "languages": "English",
+            "name": "GPT-3",
+            "parameters": "175B",
+            "references": "[59]",
+            "trained_on": [
+                "CommonCrawl",
+                "WebText2",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Online",
+            "announced": "March 14, 2023",
+            "creator": "OpenAI",
+            "languages": "English",
+            "name": "GPT-4",
+            "parameters": "?",
+            "references": "[60][61]",
+            "trained_on": "?",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 22, 2021",
+            "creator": "EleutherAI",
+            "languages": "English",
+            "name": "GPT-Neo",
+            "parameters": "2.7B",
+            "references": "[62]",
+            "trained_on": "The Pile",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "April 14, 2022",
+            "creator": "EleutherAI",
+            "languages": "English",
+            "name": "GPT-NeoX",
+            "parameters": "20B",
+            "references": "[63]",
+            "trained_on": "The Pile",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "June 4, 2021",
+            "creator": "EleutherAI",
+            "languages": "English",
+            "name": "GPT-J",
+            "parameters": "6B",
+            "references": "[64]",
+            "trained_on": "The Pile",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 29, 2022",
+            "creator": "Together",
+            "languages": "English",
+            "name": "GPT-JT",
+            "parameters": "6B",
+            "references": "[65]",
+            "trained_on": "The Pile",
+            "type": "Decoder"
+        },
+        {
+            "access": "Requestable",
+            "announced": "January 23, 2023",
+            "creator": "AI Sweden",
+            "languages": "5",
+            "name": "GPT-SW3",
+            "parameters": "20B",
+            "references": "[67]",
+            "trained_on": "The Nordic Pile[66]",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "February 15, 2022",
+            "creator": "AI Sweden",
+            "languages": "Swedish",
+            "name": "GPT-SW3 v1",
+            "parameters": "3.5B",
+            "references": "[68]",
+            "trained_on": [
+                "OSCAR",
+                "Web",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "May 29, 2019",
+            "creator": "University of Washington",
+            "languages": "English",
+            "name": "Grover-Mega",
+            "parameters": "1.5B",
+            "references": "[69]",
+            "trained_on": "RealNews",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "September 10, 2021",
+            "creator": "Naver",
+            "languages": "Korean",
+            "name": "HyperCLOVA",
+            "parameters": "82B",
+            "references": "[70]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "August 12, 2021",
+            "creator": "AI21 Labs",
+            "languages": "English",
+            "name": "J1-Jumbo",
+            "parameters": "178B",
+            "references": "[71]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "May 18, 2021",
+            "creator": "Google",
+            "languages": "English",
+            "name": "LaMDA (PT)",
+            "parameters": "137B",
+            "references": "[72][73]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "Requestable",
+            "announced": "February 24, 2023",
+            "creator": "Meta",
+            "languages": "English",
+            "name": "LLaMA",
+            "parameters": "65B",
+            "references": "[74][75]",
+            "trained_on": [
+                "CommonCrawl",
+                "C4",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "August 15, 2022",
+            "creator": "Aleph Alpha",
+            "languages": "5",
+            "name": "Luminous Supreme",
+            "parameters": "70B",
+            "references": "[44][76]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "January 27, 2020",
+            "creator": "Google",
+            "languages": "English",
+            "name": "Meena",
+            "parameters": "2.6B",
+            "references": "[77]",
+            "trained_on": "Social media",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "April 15, 2022",
+            "creator": "Sberbank",
+            "languages": "60",
+            "name": "mGPT",
+            "parameters": "13B",
+            "references": "[78]",
+            "trained_on": [
+                "Wikipedia",
+                "C4"
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "August 26, 2021",
+            "creator": "Stanford University",
+            "languages": "English",
+            "name": "Mistral",
+            "parameters": "335M",
+            "references": "[79]",
+            "trained_on": "OpenWebText",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "January 28, 2022",
+            "creator": [
+                "Microsoft",
+                "NVIDIA"
+            ],
+            "languages": "English",
+            "name": "Megatron-Turing NLG",
+            "parameters": "530B",
+            "references": "[80]",
+            "trained_on": "CommonCrawl",
+            "type": "Decoder"
+        },
+        {
+            "access": "Online, requestable",
+            "announced": "May 3, 2022",
+            "creator": "Meta",
+            "languages": "English",
+            "name": "OPT",
+            "parameters": "175B",
+            "references": "[81]",
+            "trained_on": [
+                "RoBERTa",
+                "The Pile",
+                "PushShift.io Reddit"
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Online, API",
+            "announced": "October 16, 2021",
+            "creator": "LightOn",
+            "languages": "French",
+            "name": "PAGnol",
+            "parameters": "1.5B",
+            "references": "[82]",
+            "trained_on": [
+                "CCNet",
+                "OSCAR"
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "April 26, 2021",
+            "creator": "PanGu-α Team",
+            "languages": "Chinese",
+            "name": "PanGu-α",
+            "parameters": "200B",
+            "references": "[83]",
+            "trained_on": [
+                "CommonCrawl",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "February 13, 2023",
+            "creator": "EleutherAI",
+            "languages": "English",
+            "name": "Pythia",
+            "parameters": "12B",
+            "references": "[84]",
+            "trained_on": "The Pile",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "April 5, 2022",
+            "creator": "Google",
+            "languages": "English",
+            "name": "PaLM",
+            "parameters": "540B",
+            "references": "[85]",
+            "trained_on": [
+                "Social media",
+                "filtered webpages",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "January 9, 2023",
+            "creator": "BigCode",
+            "languages": {
+                "code": 3
+            },
+            "name": "SantaCoder",
+            "parameters": "1.1B",
+            "references": "[86]",
+            "trained_on": "The Stack",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "February 13, 2020",
+            "creator": "Microsoft",
+            "languages": "English",
+            "name": "Turing-NLG",
+            "parameters": "17B",
+            "references": "[87]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "October 22, 2022",
+            "creator": "Google",
+            "languages": "English",
+            "name": "U-PaLM",
+            "parameters": "540B",
+            "references": "[88]",
+            "trained_on": [
+                "Social media",
+                "filtered webpages",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "May 31, 2021",
+            "creator": "BAAI",
+            "languages": ["English", "Chinese"],
+            "name": "Wu Dao 2.0",
+            "parameters": "1750B",
+            "tags": ["MoE"],
+            "references": "[89]",
+            "trained_on": "WuDaoCorpora",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "June 23, 2022",
+            "creator": "Yandex",
+            "languages": ["Russian", "English"],
+            "name": "YaLM",
+            "parameters": "100B",
+            "references": "[90][91]",
+            "trained_on": [
+                "The Pile",
+                "Yandex pages",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "October 10, 2021",
+            "creator": "Inspur",
+            "languages": "Chinese",
+            "name": "Yuan 1.0",
+            "parameters": "245B",
+            "references": "[92]",
+            "trained_on": [
+                "CommonCrawl",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "Reproducible",
+            "announced": "March 13, 2023",
+            "creator": "Stanford University",
+            "finetuning": "LLaMA (Instruction)",
+            "languages": "English",
+            "name": "Alpaca",
+            "parameters": "7B",
+            "references": "[93]",
+            "type": "Decoder"
+        },
+        {
+            "access": "Online",
+            "announced": "April 5, 2022",
+            "creator": "Meta",
+            "finetuning": "OPT (Dialogue)",
+            "languages": "English",
+            "name": "BlenderBot 3",
+            "parameters": "175B",
+            "references": "[94]",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 3, 2022",
+            "creator": "BigScience",
+            "finetuning": "BLOOM (Multitask)",
+            "languages": {
+                "human": 46,
+                "code": 13
+            },
+            "name": "BLOOMZ",
+            "parameters": "176B",
+            "references": "[14]",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "November 8, 2022",
+            "creator": "Cohere",
+            "finetuning": "Cohere xlarge (Instruction)",
+            "languages": "English",
+            "name": "Cohere command",
+            "parameters": "52.4B",
+            "references": "[44][95][96]",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "September 3, 2021",
+            "creator": "Google",
+            "finetuning": "LaMDA-PT (Instruction)",
+            "languages": "English",
+            "name": "FLAN",
+            "parameters": "137B",
+            "references": "[97]",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "October 20, 2022",
+            "creator": "Google",
+            "finetuning": "PaLM (Instruction)",
+            "languages": "English",
+            "name": "Flan-PaLM",
+            "parameters": "540B",
+            "references": "[13]",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "October 20, 2022",
+            "creator": "Google",
+            "finetuning": "U-PaLM (Instruction)",
+            "languages": "English",
+            "name": "Flan-U-PaLM",
+            "parameters": "540B",
+            "references": "[13]",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 10, 2023",
+            "creator": "Together",
+            "finetuning": "GPT-NeoX (Dialogue)",
+            "languages": "English",
+            "name": "GPT-NeoXT-Chat-Base-20B",
+            "parameters": "20B",
+            "references": "[98]",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "March 4, 2022",
+            "creator": "OpenAI",
+            "finetuning": "GPT-3 (Instruction)",
+            "languages": "English",
+            "name": "InstructGPT-3 (SFT)",
+            "parameters": "175B",
+            "references": "[99]",
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "May 18, 2021",
+            "creator": "Google",
+            "finetuning": "LaMDA-PT (Dialogue)",
+            "languages": "English",
+            "name": "LaMDA",
+            "parameters": "137B",
+            "references": "[100][101]",
+            "type": "Decoder"
+        },
+        {
+            "access": "Requestable",
+            "announced": "December 22, 2022",
+            "creator": "Meta",
+            "finetuning": "OPT (Instruction)",
+            "languages": "English",
+            "name": "OPT-IML",
+            "parameters": "175B",
+            "references": "[102]",
+            "type": "Decoder"
+        },
+        {
+            "access": "Online, API",
+            "announced": "April 12, 2022",
+            "creator": "Anthropic",
+            "languages": "English",
+            "name": "Anthropic-LM v4-s3",
+            "parameters": "52B",
+            "references": "[44][103]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "API",
+            "announced": "March 4, 2022",
+            "creator": "OpenAI",
+            "languages": "English",
+            "name": "InstructGPT-3 (PPO)",
+            "parameters": "175B",
+            "references": "[99]",
+            "trained_on": "",
+            "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 13, 2023",
+            "creator": "Tsinghua University",
+            "languages": ["Chinese", "English"],
+            "name": "ChatGLM-6B",
+            "parameters": "6.2B",
+            "references": "[104]",
+            "trained_on": "GLM",
+            "type": "Decoder"
+        },
+        {
+            "access": "Online, API",
+            "announced": "November 30, 2022",
+            "creator": "OpenAI",
+            "languages": "English",
+            "name": "ChatGPT",
+            "parameters": "175B",
+            "references": "[105]",
+            "trained_on": [
+                "CommonCrawl",
+                "WebText2",
+                "etc."
+            ],
+            "type": "Decoder"
+        }
+    ]
+]
