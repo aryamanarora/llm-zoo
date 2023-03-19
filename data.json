@@ -1460,6 +1460,94 @@
             },
             "type": "Decoder",
             "tags": ["medical"]
+        },
+        {
+            "access": "Yes",
+            "announced": "February 21, 2023",
+            "creator": ["Stanford University"],
+            "name": "Hyena",
+            "languages": "English",
+            "parameters": ["125M", "153M", "355M"],
+            "trained_on": "The Pile",
+            "references": {
+                "arxiv": "2302.10866"
+            },
+            "type": "Decoder",
+            "tags": ["transformer alternative"]
+        },
+        {
+            "access": "Yes",
+            "announced": "October 20, 2022",
+            "creator": "Peng Bo",
+            "name": "RWKV-4",
+            "languages": "English",
+            "parameters": ["14B"],
+            "trained_on": "The Pile",
+            "references": {
+                "huggingface": "BlinkDL/rwkv-4-pile-14b",
+                "github": "BlinkDL/RWKV-LM"
+            },
+            "type": "Decoder",
+            "tags": ["transformer alternative"]
+        },
+        {
+            "access": "Yes",
+            "announced": "September 23, 2022",
+            "creator": "Peng Bo",
+            "name": "RWKV-4",
+            "languages": "English",
+            "parameters": ["7B"],
+            "trained_on": "The Pile",
+            "references": {
+                "huggingface": "BlinkDL/rwkv-4-pile-7b",
+                "github": "BlinkDL/RWKV-LM"
+            },
+            "type": "Decoder",
+            "tags": ["transformer alternative"]
+        },
+        {
+            "access": "Yes",
+            "announced": "December 28, 2022",
+            "creator": "Stanford University",
+            "name": "H3",
+            "languages": "English",
+            "parameters": ["2.7B", "1.3B", "355M", "125M"],
+            "trained_on": "The Pile",
+            "references": {
+                "arxiv": "2212.14052",
+                "url": "https://hazyresearch.stanford.edu/blog/2023-01-20-h3",
+                "github": "HazyResearch/H3"
+            },
+            "type": "Decoder",
+            "tags": ["transformer alternative"]
+        },
+        {
+            "access": "Yes",
+            "announced": "December 28, 2022",
+            "creator": ["Google", "Tel Aviv University", "Boston University"],
+            "name": "GSS",
+            "languages": "English",
+            "parameters": ["352M", "192M"],
+            "trained_on": "Several",
+            "references": {
+                "arxiv": "2206.13947"
+            },
+            "type": "Decoder",
+            "tags": ["transformer alternative"]
+        },
+        {
+            "access": "Yes",
+            "announced": "October 31, 2021",
+            "creator": ["Stanford University"],
+            "name": "S4",
+            "languages": "English",
+            "parameters": ["249M"],
+            "trained_on": "Several",
+            "references": {
+                "arxiv": "2111.00396"
+            },
+            "type": "Decoder",
+            "tags": ["transformer alternative"]
         }
     ]
 ]
