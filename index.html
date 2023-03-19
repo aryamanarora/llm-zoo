@@ -65,20 +65,26 @@
                 else if (d.parameters.slice(-1) === 'M') {
                     d.parameters_parsed = parseFloat(d.parameters.slice(0, -1)) * 1E6
                 }
-                
-                if (typeof d.languages === "object") {
-                    d.languages_parsed = `Multilingual<sup>${d.languages.human}</sup> + Code<sup>${d.languages.code}</sup>`
-                }
-                else if (typeof d.languages === "array") {
+
+                if (Array.isArray(d.languages)) {
                     d.languages_parsed = d.languages.join(" + ")
+                }
+                else if (typeof d.languages === "object") {
+                    d.languages_parsed = `Multilingual<sup>${d.languages.human}</sup> + Code<sup>${d.languages.code}</sup>`
                 }
                 else if (!isNaN(parseInt(d.languages))) {
                     d.languages_parsed = `Multilingual<sup>${d.languages}</sup>`
                 }
                 else d.languages_parsed = d.languages
 
-                if (typeof d.creator === "array") d.creator_parsed = d.creator.join(", ")
+                if (Array.isArray(d.creator)) d.creator_parsed = d.creator.join(", ")
                 else d.creator_parsed = d.creator
+
+                if (Array.isArray(d.trained_on)) {
+                    d.trained_on_parsed = d.trained_on.join(", ")
+                    console.log(d.trained_on_parsed)
+                }
+                else d.trained_on_parsed = d.trained_on
             });
 
             console.log(data)
@@ -113,13 +119,13 @@
                 var access_color = d.access === "Yes" ? d3.schemeCategory10[2] : (d.access === "No" ? d3.schemeCategory10[3] : d3.schemeCategory10[1])
                 return `
                     <h2>${d.name}</h2>
-                    <table class="table table-light table-bordered table-sm" style="max-width: 100%;">
+                    <table class="table table-light table-bordered table-sm" style="width: 100%; table-layout: fixed;">
                         <tr><th>Type</th><td style="color: white; background-color: ${color(d.type)}"><strong>${d.type}</strong></td></tr>
                         <tr><th>Announced</th><td>${d.announced}</td></tr>
                         <tr><th>Creator(s)</th><td>${d.creator_parsed}</td></tr>
                         <tr><th>Parameters</th><td>${d.parameters}</td></tr>
                         <tr><th>Languages</th><td>${d.languages_parsed}</td></tr>
-                        <tr><th>Trained on</th><td>${d.trained_on}</td></tr>
+                        <tr><th>Trained on</th><td>${d.trained_on_parsed}</td></tr>
                         <tr><th>Access</th><td style="color: white; background-color: ${access_color}">${d.access}</td></tr>
                     </table>
                 `
