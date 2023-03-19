@@ -71,7 +71,7 @@
             "creator": "Facebook",
             "languages": "25",
             "name": "mBART",
-            "parameters": "0.68B",
+            "parameters": "680M",
             "references": {
                 "arxiv": "2001.08210"
             },
@@ -95,7 +95,7 @@
             "creator": "Google",
             "languages": "English",
             "name": "T5",
-            "parameters": "11B",
+            "parameters": ["11B", "3B", "770M", "220M", "60M"],
             "references": "[8][9]",
             "trained_on": "C4",
             "type": "Encoder-Decoder"
@@ -1052,7 +1052,7 @@
             "creator": "Together",
             "finetuning": "GPT-NeoX (Dialogue)",
             "languages": "English",
-            "name": "GPT-NeoXT-Chat-Base-20B",
+            "name": "GPT-NeoXT-Chat-Base",
             "parameters": "20B",
             "references": "[98]",
             "type": "Decoder"
@@ -1137,6 +1137,49 @@
                 "etc."
             ],
             "type": "Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 10, 2019",
+            "creator": ["Facebook", "Inria", "Sorbonne Université"],
+            "languages": "French",
+            "name": "CamemBERT",
+            "parameters": "110M",
+            "references": {
+                "arxiv": "1911.03894"
+            },
+            "trained_on": [
+                "OSCAR"
+            ],
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "November 10, 2019",
+            "creator": ["Facebook", "Inria", "Sorbonne Université"],
+            "languages": "French",
+            "name": "CamemBERT-large",
+            "parameters": "335M",
+            "references": {
+                "arxiv": "1911.03894"
+            },
+            "trained_on": [
+                "CCNet"
+            ],
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "October 2, 2019",
+            "creator": "HuggingFace",
+            "name": "DistilBERT",
+            "languages": "English",
+            "parameters": "66M",
+            "finetuning": "BERT-base (Distillation)",
+            "references": {
+                "arxiv": "1910.01108"
+            },
+            "type": "Encoder"
         }
     ]
 ]
