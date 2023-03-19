@@ -85,18 +85,23 @@
             "languages": "101",
             "name": "mT5",
             "parameters": "13B",
-            "references": "[7]",
+            "references": {
+                "arxiv": "2010.11934"
+            },
             "trained_on": "mC4",
             "type": "Encoder-Decoder"
         },
         {
             "access": "Yes",
-            "announced": "February 24, 2020",
+            "announced": "October 23, 2019",
             "creator": "Google",
             "languages": "English",
             "name": "T5",
             "parameters": ["11B", "3B", "770M", "220M", "60M"],
-            "references": "[8][9]",
+            "references": {
+                "arxiv": "1910.10683",
+                "url": "https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html"
+            },
             "trained_on": "C4",
             "type": "Encoder-Decoder"
         },
@@ -107,7 +112,10 @@
             "languages": "English",
             "name": "UL2",
             "parameters": "20B",
-            "references": "[10][11]",
+            "references": {
+                "arxiv": "2205.05131",
+                "url": "https://ai.googleblog.com/2022/10/ul2-20b-open-source-unified-language.html"
+            },
             "trained_on": "C4",
             "type": "Encoder-Decoder"
         },
@@ -119,7 +127,9 @@
             "languages": "English",
             "name": "ATLAS",
             "parameters": "11B",
-            "references": "[12]",
+            "references": {
+                "arxiv": "2208.03299v3"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -130,7 +140,9 @@
             "languages": "English",
             "name": "Flan-T5",
             "parameters": "11B",
-            "references": "[13]",
+            "references": {
+                "arxiv": "2210.11416"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -141,7 +153,9 @@
             "languages": "46",
             "name": "mT0",
             "parameters": "13B",
-            "references": "[14]",
+            "references": {
+                "arxiv": "2211.01786"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -152,7 +166,9 @@
             "languages": "54",
             "name": "mTk-Instruct",
             "parameters": "13B",
-            "references": "[15]",
+            "references": {
+                "arxiv": "2204.07705"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -163,7 +179,9 @@
             "languages": "English",
             "name": "T0, T0+, T0++",
             "parameters": "11B",
-            "references": "[16]",
+            "references": {
+                "arxiv": "2110.08207"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -174,7 +192,9 @@
             "languages": "English",
             "name": "Tk-Instruct",
             "parameters": "11B",
-            "references": "[15]",
+            "references": {
+                "arxiv": "2204.07705"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -185,7 +205,10 @@
             "languages": "English",
             "name": "Flan-UL2",
             "parameters": "20B",
-            "references": "[10][17]",
+            "references": {
+                "arxiv": "2205.05131",
+                "url": "https://www.yitay.net/blog/flan-ul2-20b"
+            },
             "type": "Encoder-Decoder"
         },
         {
@@ -195,7 +218,9 @@
             "languages": "English",
             "name": "ALBERT",
             "parameters": "17M",
-            "references": "[18]",
+            "references": {
+                "arxiv": "1909.11942"
+            },
             "trained_on": "BERT",
             "type": "Encoder"
         },
@@ -206,7 +231,10 @@
             "languages": "English",
             "name": "BERT",
             "parameters": "340M",
-            "references": "[19][20]",
+            "references": {
+                "arxiv": "1810.04805v2",
+                "url": "https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html"
+            },
             "trained_on": [
                 "BERT (BookCorpus, English Wikipedia)"
             ],
@@ -219,7 +247,10 @@
             "languages": "104",
             "name": "mBERT",
             "parameters": "172M",
-            "references": "[21][22]",
+            "references": {
+                "github": "google-research/bert",
+                "huggingface": "bert-base-multilingual-cased"
+            },
             "trained_on": "Wikipedia",
             "type": "Encoder"
         },
@@ -230,7 +261,10 @@
             "languages": "Chinese",
             "name": "BERT-Base, Chinese",
             "parameters": "102M",
-            "references": "[23][22]",
+            "references": {
+                "github": "google-research/bert",
+                "huggingface": "bert-base-chinese"
+            },
             "trained_on": "Chinese Wikipedia",
             "type": "Encoder"
         },
@@ -241,7 +275,9 @@
             "languages": "Spanish",
             "name": "BERTIN",
             "parameters": "355M",
-            "references": "[24]",
+            "references": {
+                "arxiv": "2207.06814"
+            },
             "trained_on": "mC4",
             "type": "Encoder"
         },
@@ -252,7 +288,9 @@
             "languages": "English",
             "name": "DeBERTa",
             "parameters": "1.5B",
-            "references": "[25]",
+            "references": {
+                "arxiv": "https://arxiv.org/abs/2006.03654"
+            },
             "trained_on": ["BERT + 3 corpora"],
             "type": "Encoder"
         },
@@ -263,7 +301,9 @@
             "languages": "English",
             "name": "ELECTRA-Large",
             "parameters": "334M",
-            "references": "[26]",
+            "references": {
+                "arxiv": "2003.10555"
+            },
             "trained_on": "XLNet",
             "type": "Encoder"
         },
@@ -274,7 +314,9 @@
             "languages": "English",
             "name": "FNet",
             "parameters": "238M",
-            "references": "[27]",
+            "references": {
+                "arxiv": "2105.03824v4"
+            },
             "trained_on": "C4",
             "type": "Encoder"
         },
@@ -285,7 +327,9 @@
             "languages": "12",
             "name": "IndicBERT",
             "parameters": "33M",
-            "references": "[28]",
+            "references": {
+                "url": "https://aclanthology.org/2020.findings-emnlp.445/"
+            },
             "trained_on": "IndicCorp",
             "type": "Encoder"
         },
@@ -296,7 +340,9 @@
             "languages": "24",
             "name": "IndicBERT v2",
             "parameters": "278M",
-            "references": "[29]",
+            "references": {
+                "arxiv": "2212.05409"
+            },
             "trained_on": "IndicCorp v2",
             "type": "Encoder"
         },
@@ -307,7 +353,9 @@
             "languages": "17",
             "name": "MuRIL",
             "parameters": "236M",
-            "references": "[30]",
+            "references": {
+                "arxiv": "2103.10730"
+            },
             "trained_on": [
                 "OSCAR",
                 "Wikipedia"
@@ -324,7 +372,9 @@
             "languages": "English",
             "name": "RoBERTa",
             "parameters": "355M",
-            "references": "[31]",
+            "references": {
+                "arxiv": "1907.11692"
+            },
             "trained_on": "BERT + 3 corpora",
             "type": "Encoder"
         },
@@ -335,7 +385,10 @@
             "languages": "15",
             "name": "XLM-15",
             "parameters": "250M",
-            "references": "[32][33]",
+            "references": {
+                "arxiv": "1901.07291",
+                "github": "facebookresearch/XLM"
+            },
             "trained_on": "Wikipedia",
             "type": "Encoder"
         },
@@ -346,7 +399,9 @@
             "languages": "17",
             "name": "XLM-17",
             "parameters": "570M",
-            "references": "[33]",
+            "references": {
+                "github": "facebookresearch/XLM"
+            },
             "trained_on": "Wikipedia",
             "type": "Encoder"
         },
@@ -357,7 +412,9 @@
             "languages": "100",
             "name": "XLM-100",
             "parameters": "570M",
-            "references": "[33]",
+            "references": {
+                "github": "facebookresearch/XLM"
+            },
             "trained_on": "Wikipedia",
             "type": "Encoder"
         },
@@ -368,7 +425,9 @@
             "languages": "100",
             "name": "XLM-R",
             "parameters": "550M",
-            "references": "[34]",
+            "references": {
+                "arxiv": "1911.02116"
+            },
             "trained_on": "CommonCrawl",
             "type": "Encoder"
         },
@@ -382,7 +441,9 @@
             "languages": "English",
             "name": "XLNet-Large",
             "parameters": "360M",
-            "references": "[35]",
+            "references": {
+                "arxiv": "1906.08237"
+            },
             "trained_on": "XLNet (BERT + 3 corpora)",
             "type": "Encoder"
         },
@@ -393,7 +454,9 @@
             "languages": "English",
             "name": "Anthropic-LM",
             "parameters": "52B",
-            "references": "[36]",
+            "references": {
+                "arxiv": "2112.00861"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -407,7 +470,10 @@
             },
             "name": "BLOOM",
             "parameters": "176B",
-            "references": "[37][38]",
+            "references": {
+                "arxiv": "2211.05100",
+                "url": "https://bigscience.huggingface.co/blog/bloom"
+            },
             "trained_on": "ROOTS",
             "type": "Decoder"
         },
@@ -418,7 +484,9 @@
             "languages": "English",
             "name": "Chinchilla",
             "parameters": "70B",
-            "references": "[39]",
+            "references": {
+                "arxiv": "2203.15556"
+            },
             "trained_on": "MassiveText",
             "type": "Decoder"
         },
@@ -431,7 +499,9 @@
             },
             "name": "CodeGeex",
             "parameters": "13B",
-            "references": "[40]",
+            "references": {
+                "url": "https://models.aminer.cn/codegeex/blog/"
+            },
             "trained_on": [
                 "The Pile",
                 "CodeParrot"
@@ -445,7 +515,9 @@
             "languages": "Code",
             "name": "CodeGen",
             "parameters": "16.1B",
-            "references": "[41]",
+            "references": {
+                "arxiv": "2203.13474"
+            },
             "trained_on": "GitHub",
             "type": "Decoder"
         },
@@ -456,7 +528,10 @@
             "languages": "Code",
             "name": "Codex",
             "parameters": "12B",
-            "references": "[42][43]",
+            "references": {
+                "arxiv": "2107.03374",
+                "url": "https://openai.com/blog/openai-codex"
+            },
             "trained_on": "GitHub",
             "type": "Decoder"
         },
@@ -467,7 +542,9 @@
             "languages": "English",
             "name": "Cohere large",
             "parameters": "13.1B",
-            "references": "[44][45]",
+            "references": {
+                "url": "https://txt.cohere.ai/the-cohere-platform-is-now-publicly-available-2/"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -478,7 +555,9 @@
             "languages": "English",
             "name": "Cohere xlarge",
             "parameters": "52.4B",
-            "references": "[44][46]",
+            "references": {
+                "url": "https://txt.cohere.ai/cohere-launches-extremely-large-beta-2/"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -489,7 +568,10 @@
             "languages": "Chinese",
             "name": "CPM-1",
             "parameters": "2.6B",
-            "references": "[47][48]",
+            "references": {
+                "arxiv": "2012.00413",
+                "github": "TsinghuaAI/CPM-1-Generate"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -500,7 +582,9 @@
             "languages": "English",
             "name": "DialoGPT",
             "parameters": "762M",
-            "references": "[49]",
+            "references": {
+                "arxiv": "1911.00536"
+            },
             "trained_on": "Reddit",
             "type": "Decoder"
         },
@@ -511,7 +595,10 @@
             "languages": "English",
             "name": "FairSeq Dense",
             "parameters": "13B",
-            "references": "[50][51]",
+            "references": {
+                "arxiv": "2112.10684",
+                "github": "facebookresearch/fairseq"
+            },
             "trained_on": ["RoBERTa", "CC100"],
             "type": "Decoder"
         },
@@ -523,7 +610,10 @@
             "name": "FairSeq Sparse",
             "parameters": "1100B",
             "tags": ["MoE"],
-            "references": "[50][51]",
+            "references": {
+                "arxiv": "2112.10684",
+                "github": "facebookresearch/fairseq"
+            },
             "trained_on": ["RoBERTa", "CC100"],
             "type": "Decoder"
         },
@@ -533,8 +623,10 @@
             "creator": "Meta",
             "languages": "English",
             "name": "Galactica",
-            "parameters": "120B",
-            "references": "[52]",
+            "parameters": ["120B", "30B", "6.7B", "1.3B", "125M"],
+            "references": {
+                "arxiv": "2211.09085"
+            },
             "trained_on": [
                 "Scientific papers",
                 "etc."
@@ -549,7 +641,9 @@
             "name": "GLaM",
             "parameters": "1200B",
             "tags": ["MoE"],
-            "references": "[53]",
+            "references": {
+                "arxiv": "2112.06905"
+            },
             "trained_on": [
                 "News",
                 "books",
@@ -564,7 +658,10 @@
             "languages": ["English", "Chinese"],
             "name": "GLM-130B",
             "parameters": "130B",
-            "references": "[54][55]",
+            "references": {
+                "url": "https://keg.cs.tsinghua.edu.cn/glm-130b/posts/glm-130b/",
+                "arxiv": "2210.02414"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -575,7 +672,9 @@
             "languages": "English",
             "name": "Gopher",
             "parameters": "280B",
-            "references": "[56]",
+            "references": {
+                "arxiv": "2112.11446"
+            },
             "trained_on": "MassiveText",
             "type": "Decoder"
         },
@@ -586,7 +685,9 @@
             "languages": "English",
             "name": "GPT-1",
             "parameters": "117M",
-            "references": "[57]",
+            "references": {
+                "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+            },
             "trained_on": "BookCorpus",
             "type": "Decoder"
         },
@@ -596,8 +697,10 @@
             "creator": "OpenAI",
             "languages": "English",
             "name": "GPT-2",
-            "parameters": "1.558B",
-            "references": "[58]",
+            "parameters": ["1.542B", "762M", "345M", "117M"],
+            "references": {
+                "github": "openai/gpt-2"
+            },
             "trained_on": "WebText",
             "type": "Decoder"
         },
@@ -608,7 +711,9 @@
             "languages": "English",
             "name": "GPT-3",
             "parameters": "175B",
-            "references": "[59]",
+            "references": {
+                "arxiv": "2005.14165"
+            },
             "trained_on": [
                 "CommonCrawl",
                 "WebText2",
@@ -623,7 +728,9 @@
             "languages": "English",
             "name": "GPT-4",
             "parameters": "?",
-            "references": "[60][61]",
+            "references": {
+                "url": "https://cdn.openai.com/papers/gpt-4.pdf"
+            },
             "trained_on": "?",
             "type": "Decoder"
         },
@@ -634,7 +741,9 @@
             "languages": "English",
             "name": "GPT-Neo",
             "parameters": "2.7B",
-            "references": "[62]",
+            "references": {
+                "github": "EleutherAI/gpt-neo"
+            },
             "trained_on": "The Pile",
             "type": "Decoder"
         },
@@ -645,7 +754,9 @@
             "languages": "English",
             "name": "GPT-NeoX",
             "parameters": "20B",
-            "references": "[63]",
+            "references": {
+                "arxiv": "2204.06745"
+            },
             "trained_on": "The Pile",
             "type": "Decoder"
         },
@@ -656,7 +767,9 @@
             "languages": "English",
             "name": "GPT-J",
             "parameters": "6B",
-            "references": "[64]",
+            "references": {
+                "url": "https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/"
+            },
             "trained_on": "The Pile",
             "type": "Decoder"
         },
@@ -667,7 +780,9 @@
             "languages": "English",
             "name": "GPT-JT",
             "parameters": "6B",
-            "references": "[65]",
+            "references": {
+                "url": "https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai"
+            },
             "trained_on": "The Pile",
             "type": "Decoder"
         },
@@ -678,8 +793,10 @@
             "languages": "5",
             "name": "GPT-SW3",
             "parameters": "20B",
-            "references": "[67]",
-            "trained_on": "The Nordic Pile[66]",
+            "references": {
+                "url": "https://medium.com/ai-sweden/gpt-sw3-pre-release-evaluating-large-generative-language-models-for-swedish-8799abfac670"
+            },
+            "trained_on": "The Nordic Pile",
             "type": "Decoder"
         },
         {
@@ -689,7 +806,9 @@
             "languages": "Swedish",
             "name": "GPT-SW3 v1",
             "parameters": "3.5B",
-            "references": "[68]",
+            "references": {
+                "url": "https://aclanthology.org/2022.lrec-1.376/"
+            },
             "trained_on": [
                 "OSCAR",
                 "Web",
@@ -704,7 +823,9 @@
             "languages": "English",
             "name": "Grover-Mega",
             "parameters": "1.5B",
-            "references": "[69]",
+            "references": {
+                "arxiv": "1905.12616"
+            },
             "trained_on": "RealNews",
             "type": "Decoder"
         },
@@ -715,7 +836,9 @@
             "languages": "Korean",
             "name": "HyperCLOVA",
             "parameters": "82B",
-            "references": "[70]",
+            "references": {
+                "arxiv": "2109.04650"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -724,9 +847,11 @@
             "announced": "August 12, 2021",
             "creator": "AI21 Labs",
             "languages": "English",
-            "name": "J1-Jumbo",
-            "parameters": "178B",
-            "references": "[71]",
+            "name": "Jurassic-1",
+            "parameters": ["178B", "17B", "7.5B"],
+            "references": {
+                "url": "https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -737,7 +862,10 @@
             "languages": "English",
             "name": "LaMDA (PT)",
             "parameters": "137B",
-            "references": "[72][73]",
+            "references": {
+                "url": "https://blog.google/technology/ai/lamda/",
+                "arxiv": "2201.08239"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -747,8 +875,10 @@
             "creator": "Meta",
             "languages": "English",
             "name": "LLaMA",
-            "parameters": "65B",
-            "references": "[74][75]",
+            "parameters": ["65.2B", "32.5B", "13.0B", "6.7B"],
+            "references": {
+                "arxiv": "2302.13971"
+            },
             "trained_on": [
                 "CommonCrawl",
                 "C4",
@@ -761,9 +891,11 @@
             "announced": "August 15, 2022",
             "creator": "Aleph Alpha",
             "languages": "5",
-            "name": "Luminous Supreme",
-            "parameters": "70B",
-            "references": "[44][76]",
+            "name": "Luminous",
+            "parameters": ["70B", "30B", "13B"],
+            "references": {
+                "url": "https://twitter.com/Aleph__Alpha/status/1559172685808254976"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -774,7 +906,9 @@
             "languages": "English",
             "name": "Meena",
             "parameters": "2.6B",
-            "references": "[77]",
+            "references": {
+                "arxiv": "2001.09977"
+            },
             "trained_on": "Social media",
             "type": "Decoder"
         },
@@ -785,7 +919,9 @@
             "languages": "60",
             "name": "mGPT",
             "parameters": "13B",
-            "references": "[78]",
+            "references": {
+                "arxiv": "2204.07580"
+            },
             "trained_on": [
                 "Wikipedia",
                 "C4"
@@ -799,7 +935,9 @@
             "languages": "English",
             "name": "Mistral",
             "parameters": "335M",
-            "references": "[79]",
+            "references": {
+                "url": "https://crfm.stanford.edu/2021/08/26/mistral.html"
+            },
             "trained_on": "OpenWebText",
             "type": "Decoder"
         },
@@ -813,7 +951,9 @@
             "languages": "English",
             "name": "Megatron-Turing NLG",
             "parameters": "530B",
-            "references": "[80]",
+            "references": {
+                "arxiv": "2201.11990"
+            },
             "trained_on": "CommonCrawl",
             "type": "Decoder"
         },
@@ -824,7 +964,9 @@
             "languages": "English",
             "name": "OPT",
             "parameters": "175B",
-            "references": "[81]",
+            "references": {
+                "arxiv": "2205.01068"
+            },
             "trained_on": [
                 "RoBERTa",
                 "The Pile",
@@ -839,7 +981,9 @@
             "languages": "French",
             "name": "PAGnol",
             "parameters": "1.5B",
-            "references": "[82]",
+            "references": {
+                "arxiv": "2110.08554"
+            },
             "trained_on": [
                 "CCNet",
                 "OSCAR"
@@ -853,7 +997,9 @@
             "languages": "Chinese",
             "name": "PanGu-α",
             "parameters": "200B",
-            "references": "[83]",
+            "references": {
+                "arxiv": "2104.12369"
+            },
             "trained_on": [
                 "CommonCrawl",
                 "etc."
@@ -866,8 +1012,10 @@
             "creator": "EleutherAI",
             "languages": "English",
             "name": "Pythia",
-            "parameters": "12B",
-            "references": "[84]",
+            "parameters": ["12B", "6.9B", "2.8B", "1.4B", "1B", "410M", "160M", "70M"],
+            "references": {
+                "github": "EleutherAI/pythia"
+            },
             "trained_on": "The Pile",
             "type": "Decoder"
         },
@@ -878,7 +1026,9 @@
             "languages": "English",
             "name": "PaLM",
             "parameters": "540B",
-            "references": "[85]",
+            "references": {
+                "arxiv": "2204.02311"
+            },
             "trained_on": [
                 "Social media",
                 "filtered webpages",
@@ -895,7 +1045,9 @@
             },
             "name": "SantaCoder",
             "parameters": "1.1B",
-            "references": "[86]",
+            "references": {
+                "arxiv": "2301.03988"
+            },
             "trained_on": "The Stack",
             "type": "Decoder"
         },
@@ -906,7 +1058,9 @@
             "languages": "English",
             "name": "Turing-NLG",
             "parameters": "17B",
-            "references": "[87]",
+            "references": {
+                "url": "https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -917,7 +1071,9 @@
             "languages": "English",
             "name": "U-PaLM",
             "parameters": "540B",
-            "references": "[88]",
+            "references": {
+                "arxiv": "2210.11399"
+            },
             "trained_on": [
                 "Social media",
                 "filtered webpages",
@@ -933,7 +1089,9 @@
             "name": "Wu Dao 2.0",
             "parameters": "1750B",
             "tags": ["MoE"],
-            "references": "[89]",
+            "references": {
+                "url": "https://www.scmp.com/tech/tech-war/article/3135764/us-china-tech-war-beijing-funded-ai-researchers-surpass-google-and"
+            },
             "trained_on": "WuDaoCorpora",
             "type": "Decoder"
         },
@@ -944,7 +1102,10 @@
             "languages": ["Russian", "English"],
             "name": "YaLM",
             "parameters": "100B",
-            "references": "[90][91]",
+            "references": {
+                "url": "https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6",
+                "github": "yandex/YaLM-100B"
+            },
             "trained_on": [
                 "The Pile",
                 "Yandex pages",
@@ -959,7 +1120,9 @@
             "languages": "Chinese",
             "name": "Yuan 1.0",
             "parameters": "245B",
-            "references": "[92]",
+            "references": {
+                "arxiv": "2110.04725"
+            },
             "trained_on": [
                 "CommonCrawl",
                 "etc."
@@ -974,7 +1137,9 @@
             "languages": "English",
             "name": "Alpaca",
             "parameters": "7B",
-            "references": "[93]",
+            "references": {
+                "url": "https://crfm.stanford.edu/2023/03/13/alpaca.html"
+            },
             "type": "Decoder"
         },
         {
@@ -985,7 +1150,9 @@
             "languages": "English",
             "name": "BlenderBot 3",
             "parameters": "175B",
-            "references": "[94]",
+            "references": {
+                "arxiv": "2208.03188"
+            },
             "type": "Decoder"
         },
         {
@@ -999,7 +1166,9 @@
             },
             "name": "BLOOMZ",
             "parameters": "176B",
-            "references": "[14]",
+            "references": {
+                "arxiv": "2211.01786"
+            },
             "type": "Decoder"
         },
         {
@@ -1010,7 +1179,9 @@
             "languages": "English",
             "name": "Cohere command",
             "parameters": "52.4B",
-            "references": "[44][95][96]",
+            "references": {
+                "url": "https://twitter.com/CohereAI/status/1590063348766625792"
+            },
             "type": "Decoder"
         },
         {
@@ -1021,7 +1192,9 @@
             "languages": "English",
             "name": "FLAN",
             "parameters": "137B",
-            "references": "[97]",
+            "references": {
+                "arxiv": "2109.01652v5"
+            },
             "type": "Decoder"
         },
         {
@@ -1032,7 +1205,9 @@
             "languages": "English",
             "name": "Flan-PaLM",
             "parameters": "540B",
-            "references": "[13]",
+            "references": {
+                "arxiv": "2210.11416"
+            },
             "type": "Decoder"
         },
         {
@@ -1043,7 +1218,9 @@
             "languages": "English",
             "name": "Flan-U-PaLM",
             "parameters": "540B",
-            "references": "[13]",
+            "references": {
+                "arxiv": "2210.11416"
+            },
             "type": "Decoder"
         },
         {
@@ -1054,7 +1231,9 @@
             "languages": "English",
             "name": "GPT-NeoXT-Chat-Base",
             "parameters": "20B",
-            "references": "[98]",
+            "references": {
+                "url": "https://www.together.xyz/blog/openchatkit"
+            },
             "type": "Decoder"
         },
         {
@@ -1065,7 +1244,9 @@
             "languages": "English",
             "name": "InstructGPT-3 (SFT)",
             "parameters": "175B",
-            "references": "[99]",
+            "references": {
+                "arxiv": "2203.02155"
+            },
             "type": "Decoder"
         },
         {
@@ -1076,7 +1257,10 @@
             "languages": "English",
             "name": "LaMDA",
             "parameters": "137B",
-            "references": "[100][101]",
+            "references": {
+                "arxiv": "2201.08239",
+                "url": "https://blog.google/technology/ai/lamda/"
+            },
             "type": "Decoder"
         },
         {
@@ -1087,7 +1271,9 @@
             "languages": "English",
             "name": "OPT-IML",
             "parameters": "175B",
-            "references": "[102]",
+            "references": {
+                "arxiv": "2212.12017"
+            },
             "type": "Decoder"
         },
         {
@@ -1097,7 +1283,9 @@
             "languages": "English",
             "name": "Anthropic-LM v4-s3",
             "parameters": "52B",
-            "references": "[44][103]",
+            "references": {
+                "arxiv": "2204.05862"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -1108,7 +1296,9 @@
             "languages": "English",
             "name": "InstructGPT-3 (PPO)",
             "parameters": "175B",
-            "references": "[99]",
+            "references": {
+                "arxiv": "2203.02155"
+            },
             "trained_on": "",
             "type": "Decoder"
         },
@@ -1119,7 +1309,9 @@
             "languages": ["Chinese", "English"],
             "name": "ChatGLM-6B",
             "parameters": "6.2B",
-            "references": "[104]",
+            "references": {
+                "github": "THUDM/ChatGLM-6B"
+            },
             "trained_on": "GLM",
             "type": "Decoder"
         },
@@ -1130,7 +1322,9 @@
             "languages": "English",
             "name": "ChatGPT",
             "parameters": "175B",
-            "references": "[105]",
+            "references": {
+                "url": "https://openai.com/blog/chatgpt"
+            },
             "trained_on": [
                 "CommonCrawl",
                 "WebText2",
@@ -1180,6 +1374,92 @@
                 "arxiv": "1910.01108"
             },
             "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "October 17, 2022",
+            "creator": "Stanford University",
+            "name": "DRAGON",
+            "languages": "English",
+            "parameters": "360M",
+            "trained_on": ["BookCorpus"],
+            "references": {
+                "arxiv": "2210.09338",
+                "github": "michiyasunaga/dragon"
+            },
+            "type": "Encoder",
+            "tags": ["KG", "medical"]
+        },
+        {
+            "access": "Yes",
+            "announced": "December 15, 2022",
+            "creator": ["Stanford University", "MosaicML"],
+            "name": "BioMedLM (PubMed GPT)",
+            "languages": "English",
+            "parameters": "2.7B",
+            "references": {
+                "url": "https://crfm.stanford.edu/2022/12/15/pubmedgpt.html"
+            },
+            "trained_on": ["The Pile (PubMed)"],
+            "type": "Decoder",
+            "tags": ["medical"]
+        },
+        {
+            "access": "Yes",
+            "announced": "March 29, 2022",
+            "creator": ["Stanford University"],
+            "name": "LinkBERT",
+            "languages": "English",
+            "parameters": ["340M", "110M"],
+            "references": {
+                "arxiv": "2203.15827",
+                "github": "michiyasunaga/LinkBERT"
+            },
+            "trained_on": ["Wikipedia"],
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "March 29, 2022",
+            "creator": ["Stanford University"],
+            "name": "BioLinkBERT",
+            "languages": "English",
+            "parameters": ["340M", "110M"],
+            "references": {
+                "arxiv": "2203.15827",
+                "github": "michiyasunaga/LinkBERT"
+            },
+            "trained_on": ["PubMed"],
+            "type": "Encoder",
+            "tags": ["medical"]
+        },
+        {
+            "access": "No",
+            "announced": "December 26, 2022",
+            "creator": ["Google", "DeepMind"],
+            "name": "Med-PaLM",
+            "languages": "English",
+            "parameters": "540B",
+            "finetuning": "PaLM (Instruction prompt)",
+            "references": {
+                "arxiv": "2212.13138"
+            },
+            "type": "Decoder",
+            "tags": ["medical"]
+        },
+        {
+            "access": "No",
+            "announced": "March 14, 2023",
+            "creator": ["Google", "DeepMind"],
+            "name": "Med-PaLM 2",
+            "languages": "English",
+            "parameters": "540B",
+            "finetuning": "PaLM (?)",
+            "references": {
+                "url": "https://blog.google/technology/health/ai-llm-medpalm-research-thecheckup/"
+            },
+            "type": "Decoder",
+            "tags": ["medical"]
         }
     ]
 ]
