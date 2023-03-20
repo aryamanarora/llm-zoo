@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Zoo | Aryaman Arora</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/af1874e061.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .tooltip {
+            position: absolute;
+            padding: 1em;
+        }
+
+        .tooltip p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tooltip table {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .fa, .ai, .fa-brands { display:inline; }
+    </style>
+</head>
+<body>
+    <div id="graph"></div>
+    <script>
+        const parseDate = d3.timeParse("%B %d, %Y");
+        const width = window.innerWidth, height = window.innerHeight
+        const margin = {bottom: 30, left: 40, top: 5, right: 5}
+        const tooltip_width = 350
+
+        var tooltip = d3.select("#graph").append("div")
+            .attr("class", "card title shadow text-white bg-dark mt-3 mr-3 tooltip")
+            .style("opacity", 0)
+            .style("width", tooltip_width + "px")
+            .style("right", -1000 + "px")
+            .style("top", -1000 + "px")
+
+        var label = d3.select("#graph").append("div")
+            .style("pointer-events", "none")
+            .style("position", "absolute")
+            .style("opacity", 0)
+
+        // color scale
+        var color = d3.scaleOrdinal(d3.schemeCategory10)
+            .domain(["Encoder-Decoder", "Encoder", "Decoder"])
+
+        // load data
+        d3.json("data.json").then(function (data) {
+
+            data = data[0]
+
+            new_data = []
+            data.forEach(function(d) {
+                if (Array.isArray(d.parameters)) {
+                    d.parameters.forEach(p => {
+                        new_d = JSON.parse(JSON.stringify(d))
+                        new_d.parameters = p
+                        new_data.push(new_d)
+                    })
+                }
+                else {
+                    new_data.push(d)
+                }
+            })
+
+            data = new_data
+
+            // clean data columns
+            data.forEach(function(d) {
+
+                // parse dates
+                d.announced_parsed = parseDate(d.announced);
+
+                // parse model sizes
+                if (d.parameters.slice(-1) === 'B') {
+                    d.parameters_parsed = parseFloat(d.parameters.slice(0, -1)) * 1E9
+                }
+                else if (d.parameters.slice(-1) === 'M') {
+                    d.parameters_parsed = parseFloat(d.parameters.slice(0, -1)) * 1E6
+                }
+
+                if (Array.isArray(d.languages)) {
+                    d.languages_parsed = d.languages.join(" + ")
+                }
+                else if (typeof d.languages === "object") {
+                    if ('human' in d.languages) d.languages_parsed = `Multilingual<sup>${d.languages.human}</sup> + Code<sup>${d.languages.code}</sup>`
+                    else d.languages_parsed = `Code<sup>${d.languages.code}</sup>`
+                }
+                else if (!isNaN(parseInt(d.languages))) {
+                    d.languages_parsed = `Multilingual<sup>${d.languages}</sup>`
+                }
+                else d.languages_parsed = d.languages
+
+                if (Array.isArray(d.creator)) d.creator_parsed = d.creator.join(", ")
+                else d.creator_parsed = d.creator
+
+                if (Array.isArray(d.trained_on)) {
+                    d.trained_on_parsed = d.trained_on.join(", ")
+                }
+                else if ('finetuning' in d) d.trained_on_parsed = d.finetuning
+                else if (!('trained_on' in d)) d.trained_on_parsed = "?"
+                else d.trained_on_parsed = d.trained_on
+                
+                if (typeof d.references === "object") {
+                    d.references_parsed = '<ul>'
+                    if ('arxiv' in d.references) {
+                        d.references_parsed += `<li><a href="https://arxiv.org/abs/${d.references.arxiv}" target="_blank"><i class="ai ai-arxiv"></i>&nbsp;${d.references.arxiv}</a></li>`
+                    }
+                    if ('github' in d.references) {
+                        d.references_parsed += `<li><a href="https://github.com/${d.references.github}" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;${d.references.github}</a></li>`
+                    }
+                    if ('url' in d.references) {
+                        d.references_parsed += `<li><a href="${d.references.url}" target="_blank"><i class="fa fa-solid fa-link"></i>&nbsp;Link</a></li>`
+                    }
+                    d.references_parsed += '</ul>'
+                }
+                else d.references_parsed = ''
+            });
+
+            console.log(data)
+
+            // make svg
+            var svg = d3.select("#graph")
+                .append("svg")
+                    .attr("preserveAspectRatio", "xMidYMid")
+                    .attr("viewBox", "0 0 " + width + " " + height)
+                .append("g")
+                    .attr("transform",
+                        "translate(" + margin.left + "," + margin.top + ")");
+
+            // axes
+            var x = d3.scaleTime()
+                .domain([new Date("2018-01-01"), new Date("2023-12-01")])
+                .range([0, width - margin.right]);
+
+            var y = d3.scaleLog()
+                .domain([5e6, 3e12])
+                .range([height - margin.bottom, 0]);
+
+            svg.selectAll("line.horizontalGrid").data(y.ticks(6)).enter()
+                .append("line")
+                    .attr("x1", margin.right)
+                    .attr("x2", width)
+                    .attr("y1", d => y(d))
+                    .attr("y2", d => y(d))
+                    .attr("stroke", "#eee")
+                    .attr("stroke-width", "1px")
+                    .attr("shape-rendering", "crispEdges")
+
+            svg.selectAll("line.verticalgrid").data(x.ticks(6)).enter()
+                .append("line")
+                    .attr("x1", d => x(d))
+                    .attr("x2", d => x(d))
+                    .attr("y1", margin.top)
+                    .attr("y2", height - margin.bottom)
+                    .attr("stroke", "#eee")
+                    .attr("stroke-width", "1px")
+                    .attr("shape-rendering", "crispEdges")
+
+            svg.append("g")
+                .attr("transform", "translate(0," + (height - margin.bottom) + ")")
+                .call(d3.axisBottom(x));
+
+            svg.append("g")
+                .call(d3.axisLeft(y));
+            
+
+            function generate_tooltip(d) {
+                var access_color = d.access === "Yes" ? d3.schemeCategory10[2] : (d.access === "No" ? d3.schemeCategory10[3] : d3.schemeCategory10[1])
+                return `
+                    <h2>${d.name} <small class="text-muted">${d.parameters}</small></h2>
+                    <table class="table table-light table-bordered table-sm" style="width: 100%; table-layout: fixed;">
+                        <tr><th>Type</th><td style="color: white; background-color: ${color(d.type)}"><strong>${d.type}</strong></td></tr>
+                        <tr><th>Announced</th><td>${d.announced}</td></tr>
+                        <tr><th>Creator(s)</th><td>${d.creator_parsed}</td></tr>
+                        <tr><th>Parameters</th><td>${d.parameters}</td></tr>
+                        <tr><th>Languages</th><td>${d.languages_parsed}</td></tr>
+                        <tr><th>Trained on</th><td>${d.trained_on_parsed}</td></tr>
+                        <tr><th>Access</th><td style="color: white; background-color: ${access_color}">${d.access}</td></tr>
+                        <tr><th>References</th><td>${d.references_parsed}</td></tr>
+                    </table>
+                `
+            }
+
+            // dots for each model
+            clicked = false
+            svg.append('g')
+                .selectAll("dot")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", d => x(d.announced_parsed) )
+                .attr("cy", d => y(d.parameters_parsed) )
+                .attr("r", 5)
+                .attr("stroke-width", d => 'tags' in d ? (d.tags.includes("transformer alternative") ? 2 : 0) : 0)
+                .attr("stroke", "black")
+                .style("fill", d => color(d.type))
+                .on("mouseover", function(e, d) {
+                    if (!clicked) {
+                        tooltip.style("left", 20 + "px")
+                            .style("top", 10 + "px")
+                        tooltip.html(generate_tooltip(d))
+                        tooltip.transition()
+                            .duration(100)
+                            .style("opacity", 1)
+                    }
+
+                    label.style("left", (x(d.announced_parsed) + margin.left + 7) + "px")
+                        .style("top", (y(d.parameters_parsed) + margin.top - 20) + "px")
+                    label.html(`${d.name} <small class="text-muted">(${d.parameters})</small>`)
+
+                    label.transition()
+                        .duration(100)
+                        .style("opacity", 1)
+                })
+                .on("click", function (e, d) {
+                    if (clicked != d.name) {
+                        d3.selectAll("circle").style("opacity", 0.2)
+                        d3.select(this).style("opacity", 1)
+                        clicked = d.name
+                        tooltip.style("left", 20 + "px")
+                            .style("top", 10 + "px")
+                        tooltip.html(generate_tooltip(d))
+                        tooltip.transition()
+                            .duration(100)
+                            .style("opacity", 1)
+                    }
+                    else {
+                        d3.selectAll("circle").style("opacity", 1)
+                        clicked = false
+                    }
+                })
+                .on("mouseout", function (e, d) {
+                    if (!clicked) {
+                        tooltip.style("opacity", 0)
+                            .style("right", -1000 + "px")
+                            .style("top", -1000 + "px")
+                    }
+                    label.style("opacity", 0)
+                        .style("right", -1000 + "px")
+                        .style("top", -1000 + "px")
+                })
+
+        })
+    </script>
+</body>
+</html>
