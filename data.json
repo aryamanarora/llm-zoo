@@ -8,7 +8,9 @@
             "name": "BART",
             "parameters": "400M",
             "references": {
-                "arxiv": "1910.13461"
+                "arxiv": "1910.13461",
+                "huggingface": "facebook/bart-large",
+                "github": "facebookresearch/fairseq"
             },
             "trained_on": "RoBERTa",
             "type": "Encoder-Decoder"
@@ -128,7 +130,8 @@
             "name": "ATLAS",
             "parameters": "11B",
             "references": {
-                "arxiv": "2208.03299v3"
+                "arxiv": "2208.03299v3",
+                "github": "facebookresearch/atlas"
             },
             "type": "Encoder-Decoder"
         },
@@ -332,7 +335,9 @@
             "name": "IndicBERT",
             "parameters": "33M",
             "references": {
-                "url": "https://aclanthology.org/2020.findings-emnlp.445/"
+                "url": "https://aclanthology.org/2020.findings-emnlp.445/",
+                "github": "AI4Bharat/IndicBERT",
+                "huggingface": "ai4bharat/indic-bert"
             },
             "trained_on": "IndicCorp",
             "type": "Encoder"
@@ -345,7 +350,9 @@
             "name": "IndicBERT v2",
             "parameters": "278M",
             "references": {
-                "arxiv": "2212.05409"
+                "arxiv": "2212.05409",
+                "github": "AI4Bharat/IndicBERT",
+                "huggingface": "ai4bharat/IndicBERTv2-MLM-only"
             },
             "trained_on": "IndicCorp v2",
             "type": "Encoder"
@@ -643,16 +650,12 @@
             "creator": "Google",
             "languages": "English",
             "name": "GLaM (MoE)",
-            "parameters": "1200B",
+            "parameters": ["1200B", "143B", "105B", "53B", "27B", "20B", "1.9B"],
             "tags": ["MoE"],
             "references": {
                 "arxiv": "2112.06905"
             },
-            "trained_on": [
-                "News",
-                "books",
-                "etc."
-            ],
+            "trained_on": "",
             "type": "Decoder"
         },
         {
@@ -665,11 +668,7 @@
             "references": {
                 "arxiv": "2112.06905"
             },
-            "trained_on": [
-                "News",
-                "books",
-                "etc."
-            ],
+            "trained_on": "",
             "type": "Decoder"
         },
         {
@@ -763,7 +762,8 @@
             "name": "GPT-Neo",
             "parameters": ["2.7B", "1.3B", "350M", "125M"],
             "references": {
-                "github": "EleutherAI/gpt-neo"
+                "github": "EleutherAI/gpt-neo",
+                "huggingface": "EleutherAI/gpt-neo-2.7B"
             },
             "trained_on": "The Pile",
             "type": "Decoder"
@@ -776,7 +776,8 @@
             "name": "GPT-NeoX",
             "parameters": "20B",
             "references": {
-                "arxiv": "2204.06745"
+                "arxiv": "2204.06745",
+                "huggingface": "EleutherAI/gpt-neox-20b"
             },
             "trained_on": "The Pile",
             "type": "Decoder"
@@ -973,7 +974,8 @@
             "name": "Megatron-Turing NLG",
             "parameters": "530B",
             "references": {
-                "arxiv": "2201.11990"
+                "arxiv": "2201.11990",
+                "url": "https://www.microsoft.com/en-us/research/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/"
             },
             "trained_on": "CommonCrawl",
             "type": "Decoder"
@@ -1160,7 +1162,8 @@
             "name": "Alpaca",
             "parameters": "7B",
             "references": {
-                "url": "https://crfm.stanford.edu/2023/03/13/alpaca.html"
+                "url": "https://crfm.stanford.edu/2023/03/13/alpaca.html",
+                "github": "tatsu-lab/stanford_alpaca"
             },
             "type": "Decoder"
         },
@@ -1680,6 +1683,21 @@
                 "arxiv": "2202.08906"
             },
             "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "January 11, 2021",
+            "creator": "Google",
+            "name": "Switch",
+            "languages": "English",
+            "parameters": ["1571B", "395B", "26B", "7B"],
+            "trained_on": "C4",
+            "references": {
+                "arxiv": "2101.03961",
+                "huggingface": "google/switch-c-2048"
+            },
+            "type": "Encoder-Decoder",
+            "tags": ["MoE"]
         }
     ]
 ]

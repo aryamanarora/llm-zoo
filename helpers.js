@@ -1,21 +1,25 @@
 const parseDate = d3.timeParse("%B %d, %Y");
 
-function clean(data) {
-    new_data = []
-    data.forEach(function(d) {
-        if (Array.isArray(d.parameters)) {
-            d.parameters.forEach(p => {
-                new_d = JSON.parse(JSON.stringify(d))
-                new_d.parameters = p
-                new_data.push(new_d)
-            })
-        }
-        else {
-            new_data.push(d)
-        }
-    })
+function clean(data, split=false) {
 
-    data = new_data
+    // split different param sizes into their own entries
+    if (split) {
+        new_data = []
+        data.forEach(function(d) {
+            if (Array.isArray(d.parameters)) {
+                d.parameters.forEach(p => {
+                    new_d = JSON.parse(JSON.stringify(d))
+                    new_d.parameters = p
+                    new_data.push(new_d)
+                })
+            }
+            else {
+                new_data.push(d)
+            }
+        })
+
+        data = new_data
+    }
 
     // clean data columns
     data.forEach(function(d) {
@@ -27,6 +31,11 @@ function clean(data) {
         }
 
         // parse model sizes
+        d.params_old = d.parameters
+        if (Array.isArray(d.parameters)) {
+            d.parameters = d.parameters[0]
+            d.params_old = d.params_old.join(', ')
+        }
         if (d.parameters.slice(-1) === 'B') {
             d.parameters_parsed = parseFloat(d.parameters.slice(0, -1)) * 1E9
         }
@@ -36,7 +45,7 @@ function clean(data) {
         else d.parameters_parsed = 0.0
 
         d.params = {
-            display: d.parameters,
+            display: d.params_old + ('tags' in d ? (d.tags.includes('MoE') ? '<sup>MoE</sup>' : '') : ''),
             parsed: d.parameters_parsed
         }
 
@@ -72,6 +81,9 @@ function clean(data) {
             }
             if ('url' in d.references) {
                 d.references_parsed += `<li><a href="${d.references.url}" target="_blank"><i class="fa fa-solid fa-link"></i>&nbsp;Link</a></li>`
+            }
+            if ('huggingface' in d.references) {
+                d.references_parsed += `<li><a href="https://huggingface.co/${d.references.huggingface}" target="_blank">🤗&nbsp;${d.references.huggingface}</a></li>`
             }
             d.references_parsed += '</ul>'
         }
