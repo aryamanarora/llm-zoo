@@ -1311,7 +1311,7 @@
             "references": {
                 "arxiv": "2204.05862"
             },
-            "trained_on": "",
+            "rlhf": "Anthropic-LM (HHH)",
             "type": "Decoder"
         },
         {
@@ -1324,7 +1324,7 @@
             "references": {
                 "arxiv": "2203.02155"
             },
-            "trained_on": "",
+            "rlhf": "InstructGPT-3",
             "type": "Decoder"
         },
         {
@@ -1337,7 +1337,7 @@
             "references": {
                 "github": "THUDM/ChatGLM-6B"
             },
-            "trained_on": "GLM",
+            "rlhf": "GLM",
             "type": "Decoder"
         },
         {
@@ -1350,11 +1350,7 @@
             "references": {
                 "url": "https://openai.com/blog/chatgpt"
             },
-            "trained_on": [
-                "CommonCrawl",
-                "WebText2",
-                "etc."
-            ],
+            "rlhf": "GPT-3.5",
             "type": "Decoder"
         },
         {
@@ -1498,7 +1494,7 @@
                 "arxiv": "2302.10866"
             },
             "type": "Decoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "Yes",
@@ -1513,7 +1509,7 @@
                 "github": "BlinkDL/RWKV-LM"
             },
             "type": "Decoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "Yes",
@@ -1528,7 +1524,7 @@
                 "github": "BlinkDL/RWKV-LM"
             },
             "type": "Decoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "Yes",
@@ -1544,7 +1540,7 @@
                 "github": "HazyResearch/H3"
             },
             "type": "Decoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "Yes",
@@ -1558,7 +1554,7 @@
                 "arxiv": "2206.13947"
             },
             "type": "Decoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "Yes",
@@ -1572,7 +1568,7 @@
                 "arxiv": "2111.00396"
             },
             "type": "Decoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "Some",
@@ -1655,7 +1651,7 @@
                 "arxiv": "1802.05365"
             },
             "type": "Encoder",
-            "tags": ["transformer alternative"]
+            "tags": ["non-transformer"]
         },
         {
             "access": "No",

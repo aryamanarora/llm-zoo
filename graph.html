@@ -145,7 +145,7 @@
                 .attr("cx", d => x(d.announced.parsed) )
                 .attr("cy", d => y(d.parameters_parsed) )
                 .attr("r", 5)
-                .attr("stroke-width", d => 'tags' in d ? (d.tags.includes("transformer alternative") ? 2 : 0) : 0)
+                .attr("stroke-width", d => 'tags' in d ? (d.tags.includes("non-transformer") ? 2 : 0) : 0)
                 .attr("stroke", "black")
                 .style("fill", d => color(d.type))
                 .on("mouseover", function(e, d) {

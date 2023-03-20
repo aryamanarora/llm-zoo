@@ -24,6 +24,8 @@ function clean(data, split=false) {
     // clean data columns
     data.forEach(function(d) {
 
+        d.name = d.name + ('tags' in d ? (d.tags.includes('non-transformer') ? '*' : '') : '')
+
         // parse dates
         d.announced = {
             display: d.announced,
@@ -67,7 +69,8 @@ function clean(data, split=false) {
         if (Array.isArray(d.trained_on)) {
             d.trained_on_parsed = d.trained_on.join(", ")
         }
-        else if ('finetuning' in d) d.trained_on_parsed = d.finetuning
+        else if ('finetuning' in d) d.trained_on_parsed = '<sup>FT</sup>' + d.finetuning
+        else if ('rlhf' in d) d.trained_on_parsed = '<sup>RLHF</sup>' + d.rlhf
         else if (!('trained_on' in d)) d.trained_on_parsed = "?"
         else d.trained_on_parsed = d.trained_on
         
