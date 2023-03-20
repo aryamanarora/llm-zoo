@@ -84,7 +84,7 @@
             "creator": "Google",
             "languages": "101",
             "name": "mT5",
-            "parameters": "13B",
+            "parameters": ["13B", "3.7B", "1.2B", "580M", "300M"],
             "references": {
                 "arxiv": "2010.11934"
             },
@@ -138,7 +138,7 @@
             "creator": "Google",
             "finetuning": "T5 (Instruction)",
             "languages": "English",
-            "name": "Flan-T5",
+            "name": "Flan-T5-XXL",
             "parameters": "11B",
             "references": {
                 "arxiv": "2210.11416"
@@ -219,7 +219,8 @@
             "name": "ALBERT",
             "parameters": "17M",
             "references": {
-                "arxiv": "1909.11942"
+                "arxiv": "1909.11942",
+                "github": "google-research/albert"
             },
             "trained_on": "BERT",
             "type": "Encoder"
@@ -230,10 +231,11 @@
             "creator": "Google",
             "languages": "English",
             "name": "BERT",
-            "parameters": "340M",
+            "parameters": ["340M", "110M"],
             "references": {
                 "arxiv": "1810.04805v2",
-                "url": "https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html"
+                "url": "https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html",
+                "github": "google-research/bert"
             },
             "trained_on": [
                 "BERT (BookCorpus, English Wikipedia)"
@@ -289,7 +291,8 @@
             "name": "DeBERTa",
             "parameters": "1.5B",
             "references": {
-                "arxiv": "https://arxiv.org/abs/2006.03654"
+                "arxiv": "https://arxiv.org/abs/2006.03654",
+                "github": "microsoft/DeBERTa"
             },
             "trained_on": ["BERT + 3 corpora"],
             "type": "Encoder"
@@ -299,10 +302,11 @@
             "announced": "March 23, 2020",
             "creator": "Google",
             "languages": "English",
-            "name": "ELECTRA-Large",
-            "parameters": "334M",
+            "name": "ELECTRA",
+            "parameters": ["335M", "110M", "14M"],
             "references": {
-                "arxiv": "2003.10555"
+                "arxiv": "2003.10555",
+                "github": "google-research/electra"
             },
             "trained_on": "XLNet",
             "type": "Encoder"
@@ -469,7 +473,7 @@
                 "code": 13
             },
             "name": "BLOOM",
-            "parameters": "176B",
+            "parameters": ["176B", "7.1B", "3B", "1.7B", "1.1B", "560M"],
             "references": {
                 "arxiv": "2211.05100",
                 "url": "https://bigscience.huggingface.co/blog/bloom"
@@ -594,7 +598,7 @@
             "creator": "Meta",
             "languages": "English",
             "name": "FairSeq Dense",
-            "parameters": "13B",
+            "parameters": ["13B", "6.7B", "2.7B", "1.3B", "355M", "125M"],
             "references": {
                 "arxiv": "2112.10684",
                 "github": "facebookresearch/fairseq"
@@ -608,7 +612,7 @@
             "creator": "Meta",
             "languages": "English",
             "name": "FairSeq Sparse",
-            "parameters": "1100B",
+            "parameters": ["1100B", "207B", "52B", "15B"],
             "tags": ["MoE"],
             "references": {
                 "arxiv": "2112.10684",
@@ -638,9 +642,26 @@
             "announced": "December 13, 2021",
             "creator": "Google",
             "languages": "English",
-            "name": "GLaM",
+            "name": "GLaM (MoE)",
             "parameters": "1200B",
             "tags": ["MoE"],
+            "references": {
+                "arxiv": "2112.06905"
+            },
+            "trained_on": [
+                "News",
+                "books",
+                "etc."
+            ],
+            "type": "Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "December 13, 2021",
+            "creator": "Google",
+            "languages": "English",
+            "name": "GLaM (Dense)",
+            "parameters": ["137B", "8B", "1.7B", "0.1B"],
             "references": {
                 "arxiv": "2112.06905"
             },
@@ -710,7 +731,7 @@
             "creator": "OpenAI",
             "languages": "English",
             "name": "GPT-3",
-            "parameters": "175B",
+            "parameters": ["175B", "13B", "6.7B", "2.7B", "1.3B", "760M", "350M", "125M"],
             "references": {
                 "arxiv": "2005.14165"
             },
@@ -740,7 +761,7 @@
             "creator": "EleutherAI",
             "languages": "English",
             "name": "GPT-Neo",
-            "parameters": "2.7B",
+            "parameters": ["2.7B", "1.3B", "350M", "125M"],
             "references": {
                 "github": "EleutherAI/gpt-neo"
             },
@@ -918,7 +939,7 @@
             "creator": "Sberbank",
             "languages": "60",
             "name": "mGPT",
-            "parameters": "13B",
+            "parameters": ["13B", "1.3B"],
             "references": {
                 "arxiv": "2204.07580"
             },
@@ -934,7 +955,7 @@
             "creator": "Stanford University",
             "languages": "English",
             "name": "Mistral",
-            "parameters": "335M",
+            "parameters": ["355M", "124M"],
             "references": {
                 "url": "https://crfm.stanford.edu/2021/08/26/mistral.html"
             },
@@ -963,9 +984,10 @@
             "creator": "Meta",
             "languages": "English",
             "name": "OPT",
-            "parameters": "175B",
+            "parameters": ["175B", "66B", "30B", "13B", "6.7B", "2.7B", "1.3B", "350M", "125M"],
             "references": {
-                "arxiv": "2205.01068"
+                "arxiv": "2205.01068",
+                "github": "facebookresearch/metaseq"
             },
             "trained_on": [
                 "RoBERTa",
@@ -1025,7 +1047,7 @@
             "creator": "Google",
             "languages": "English",
             "name": "PaLM",
-            "parameters": "540B",
+            "parameters": ["540B", "62B", "8B"],
             "references": {
                 "arxiv": "2204.02311"
             },
@@ -1165,7 +1187,7 @@
                 "code": 13
             },
             "name": "BLOOMZ",
-            "parameters": "176B",
+            "parameters": ["176B", "7.1B", "3B", "1.7B", "1.1B", "560M"],
             "references": {
                 "arxiv": "2211.01786"
             },
@@ -1204,7 +1226,7 @@
             "finetuning": "PaLM (Instruction)",
             "languages": "English",
             "name": "Flan-PaLM",
-            "parameters": "540B",
+            "parameters": ["540B", "62B"],
             "references": {
                 "arxiv": "2210.11416"
             },
@@ -1270,7 +1292,7 @@
             "finetuning": "OPT (Instruction)",
             "languages": "English",
             "name": "OPT-IML",
-            "parameters": "175B",
+            "parameters": ["175B", "30B"],
             "references": {
                 "arxiv": "2212.12017"
             },
@@ -1548,6 +1570,116 @@
             },
             "type": "Decoder",
             "tags": ["transformer alternative"]
+        },
+        {
+            "access": "Some",
+            "announced": "September 17, 2019",
+            "creator": "NVIDIA",
+            "name": "Megatron-LM",
+            "languages": "English",
+            "parameters": ["8.3B", "2.5B", "355M"],
+            "trained_on": ["Wikipedia", "CC-Stories", "RealNews", "OpenWebText"],
+            "references": {
+                "arxiv": "1909.08053",
+                "github": "NVIDIA/Megatron-LM"
+            },
+            "type": "Decoder"
+        },
+        {
+            "access": "Some",
+            "announced": "September 17, 2019",
+            "creator": "NVIDIA",
+            "name": "Megatron-LM",
+            "languages": "English",
+            "parameters": ["3.9B", "1.3B", "336M"],
+            "trained_on": ["Wikipedia", "CC-Stories", "RealNews", "OpenWebText"],
+            "references": {
+                "arxiv": "1909.08053",
+                "github": "NVIDIA/Megatron-LM"
+            },
+            "type": "Encoder"
+        },
+        {
+            "access": "No",
+            "announced": "March 17, 2023",
+            "creator": "Google",
+            "name": "CoLT-5",
+            "languages": "English",
+            "parameters": ["5.297B", "1.462B", "433M"],
+            "trained_on": "",
+            "references": {
+                "arxiv": "2303.09752"
+            },
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "December 15, 2021",
+            "creator": "Google",
+            "name": "LongT5",
+            "languages": "English",
+            "parameters": ["3B", "780M", "250M"],
+            "trained_on": "C4",
+            "references": {
+                "arxiv": "2112.07916",
+                "github": "google-research/longt5"
+            },
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "December 18, 2019",
+            "creator": "Google",
+            "name": "PEGASUS",
+            "languages": "English",
+            "parameters": ["568M", "223M"],
+            "trained_on": ["C4", "HugeNews"],
+            "references": {
+                "arxiv": "1912.08777",
+                "github": "google-research/pegasus"
+            },
+            "type": "Encoder"
+        },
+        {
+            "access": "Yes",
+            "announced": "February 15, 2018",
+            "creator": "Allen Institute for AI",
+            "name": "ELMo",
+            "languages": "English",
+            "parameters": ["93.6M"],
+            "trained_on": ["1B Word Benchmark"],
+            "references": {
+                "arxiv": "1802.05365"
+            },
+            "type": "Encoder",
+            "tags": ["transformer alternative"]
+        },
+        {
+            "access": "No",
+            "announced": "February 17, 2022",
+            "creator": "Google",
+            "name": "ST-MoE",
+            "languages": "English",
+            "parameters": ["269B", "4.1B"],
+            "trained_on": ["C4"],
+            "references": {
+                "arxiv": "2202.08906"
+            },
+            "tags": ["MoE"],
+            "type": "Encoder-Decoder"
+        },
+        {
+            "access": "No",
+            "announced": "February 17, 2022",
+            "creator": "Google",
+            "name": "Dense-L",
+            "languages": "English",
+            "parameters": ["0.8B"],
+            "trained_on": ["C4"],
+            "references": {
+                "arxiv": "2202.08906"
+            },
+            "type": "Encoder-Decoder"
         }
     ]
 ]

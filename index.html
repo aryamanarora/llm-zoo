@@ -217,32 +217,38 @@
                 .attr("stroke", "black")
                 .style("fill", d => color(d.type))
                 .on("mouseover", function(e, d) {
-                    tooltip.style("left", 20 + "px")
-                        .style("top", 10 + "px")
-                    tooltip.html(generate_tooltip(d))
-                    tooltip.transition()
-                        .duration(100)
-                        .style("opacity", 1)
+                    if (!clicked) {
+                        tooltip.style("left", 20 + "px")
+                            .style("top", 10 + "px")
+                        tooltip.html(generate_tooltip(d))
+                        tooltip.transition()
+                            .duration(100)
+                            .style("opacity", 1)
+                    }
 
                     label.style("left", (x(d.announced_parsed) + margin.left + 7) + "px")
                         .style("top", (y(d.parameters_parsed) + margin.top - 20) + "px")
                     label.html(`${d.name} <small class="text-muted">(${d.parameters})</small>`)
-                    if (clicked) {
-                        d3.selectAll("circle").style("opacity", 0.2)
-                        d3.select(this).style("opacity", 1)
-                    }
+
                     label.transition()
                         .duration(100)
                         .style("opacity", 1)
                 })
                 .on("click", function (e, d) {
-                    clicked ^= 1
-                    if (clicked) {
+                    if (clicked != d.name) {
                         d3.selectAll("circle").style("opacity", 0.2)
                         d3.select(this).style("opacity", 1)
+                        clicked = d.name
+                        tooltip.style("left", 20 + "px")
+                            .style("top", 10 + "px")
+                        tooltip.html(generate_tooltip(d))
+                        tooltip.transition()
+                            .duration(100)
+                            .style("opacity", 1)
                     }
                     else {
                         d3.selectAll("circle").style("opacity", 1)
+                        clicked = false
                     }
                 })
                 .on("mouseout", function (e, d) {
@@ -250,10 +256,10 @@
                         tooltip.style("opacity", 0)
                             .style("right", -1000 + "px")
                             .style("top", -1000 + "px")
-                        label.style("opacity", 0)
-                            .style("right", -1000 + "px")
-                            .style("top", -1000 + "px")
                     }
+                    label.style("opacity", 0)
+                        .style("right", -1000 + "px")
+                        .style("top", -1000 + "px")
                 })
 
         })
