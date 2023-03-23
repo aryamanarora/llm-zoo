@@ -4,9 +4,11 @@
             "access": "Yes",
             "announced": "October 29, 2019",
             "creator": "Facebook",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "BART",
-            "parameters": "400M",
+            "parameters": ["400M", "140M"],
             "references": {
                 "arxiv": "1910.13461",
                 "huggingface": "facebook/bart-large",
@@ -19,7 +21,9 @@
             "access": "Yes",
             "announced": "May 28, 2021",
             "creator": "Google",
-            "languages": "101",
+            "languages": {
+                "human": 101
+            },
             "name": "ByT5",
             "parameters": "13B",
             "references": {
@@ -32,7 +36,9 @@
             "access": "Yes",
             "announced": "July 5, 2021",
             "creator": "Baidu",
-            "languages": "Chinese",
+            "languages": {
+                "human": ["Chinese"]
+            },
             "name": "ERNIE 3.0",
             "parameters": "10B",
             "references": {
@@ -45,7 +51,9 @@
             "access": "No",
             "announced": "December 23, 2021",
             "creator": "Baidu",
-            "languages": "Chinese",
+            "languages": {
+                "human": ["Chinese"]
+            },
             "name": "ERNIE 3.0 Titan",
             "parameters": "260B",
             "references": {
@@ -58,7 +66,9 @@
             "access": "Yes",
             "announced": "April 18, 2021",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "LM-adapted T5",
             "parameters": "11B",
             "references": {
@@ -71,7 +81,9 @@
             "access": "Yes",
             "announced": "January 22, 2020",
             "creator": "Facebook",
-            "languages": "25",
+            "languages": {
+                "human": 25
+            },
             "name": "mBART",
             "parameters": "680M",
             "references": {
@@ -84,7 +96,9 @@
             "access": "Yes",
             "announced": "October 22, 2020",
             "creator": "Google",
-            "languages": "101",
+            "languages": {
+                "human": 101
+            },
             "name": "mT5",
             "parameters": ["13B", "3.7B", "1.2B", "580M", "300M"],
             "references": {
@@ -97,7 +111,9 @@
             "access": "Yes",
             "announced": "October 23, 2019",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "T5",
             "parameters": ["11B", "3B", "770M", "220M", "60M"],
             "references": {
@@ -111,7 +127,9 @@
             "access": "Yes",
             "announced": "May 10, 2022",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "UL2",
             "parameters": "20B",
             "references": {
@@ -126,7 +144,9 @@
             "announced": "August 5, 2022",
             "creator": "Meta",
             "finetuning": "T5+LM (Retrieval-augmented)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "ATLAS",
             "parameters": "11B",
             "references": {
@@ -140,7 +160,9 @@
             "announced": "October 20, 2022",
             "creator": "Google",
             "finetuning": "T5 (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Flan-T5-XXL",
             "parameters": "11B",
             "references": {
@@ -153,7 +175,9 @@
             "announced": "November 3, 2022",
             "creator": "BigScience",
             "finetuning": "mT5 (Multitask)",
-            "languages": "46",
+            "languages": {
+                "human": 46
+            },
             "name": "mT0",
             "parameters": "13B",
             "references": {
@@ -166,7 +190,9 @@
             "announced": "April 16, 2022",
             "creator": "Allen Institute for AI",
             "finetuning": "mT5-XXL (Instruction)",
-            "languages": "54",
+            "languages": {
+                "human": 54
+            },
             "name": "mTk-Instruct",
             "parameters": "13B",
             "references": {
@@ -179,7 +205,9 @@
             "announced": "October 15, 2021",
             "creator": "BigScience",
             "finetuning": "T5+LM (Multitask)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "T0, T0+, T0++",
             "parameters": "11B",
             "references": {
@@ -192,7 +220,9 @@
             "announced": "April 16, 2022",
             "creator": "Allen Institute for AI",
             "finetuning": "T5-XXL (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Tk-Instruct",
             "parameters": "11B",
             "references": {
@@ -205,7 +235,9 @@
             "announced": "February 28, 2023",
             "creator": "Google",
             "finetuning": "UL2 (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Flan-UL2",
             "parameters": "20B",
             "references": {
@@ -218,7 +250,9 @@
             "access": "Yes",
             "announced": "September 26, 2019",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "ALBERT",
             "parameters": "17M",
             "references": {
@@ -232,7 +266,9 @@
             "access": "Yes",
             "announced": "October 11, 2018",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "BERT",
             "parameters": ["340M", "110M"],
             "references": {
@@ -249,7 +285,9 @@
             "access": "Yes",
             "announced": "November 4, 2018",
             "creator": "Google",
-            "languages": "104",
+            "languages": {
+                "human": 104
+            },
             "name": "mBERT",
             "parameters": "172M",
             "references": {
@@ -263,7 +301,9 @@
             "access": "Yes",
             "announced": "November 4, 2018",
             "creator": "Google",
-            "languages": "Chinese",
+            "languages": {
+                "human": ["Chinese"]
+            },
             "name": "BERT-Base, Chinese",
             "parameters": "102M",
             "references": {
@@ -277,7 +317,9 @@
             "access": "Yes",
             "announced": "July 14, 2022",
             "creator": "BERTIN Project",
-            "languages": "Spanish",
+            "languages": {
+                "human": ["Spanish"]
+            },
             "name": "BERTIN",
             "parameters": "355M",
             "references": {
@@ -290,7 +332,9 @@
             "access": "Yes",
             "announced": "June 5, 2020",
             "creator": "Microsoft",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "DeBERTa",
             "parameters": "1.5B",
             "references": {
@@ -304,7 +348,9 @@
             "access": "Yes",
             "announced": "March 23, 2020",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "ELECTRA",
             "parameters": ["335M", "110M", "14M"],
             "references": {
@@ -318,7 +364,9 @@
             "access": "Yes",
             "announced": "May 9, 2021",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "FNet",
             "parameters": "238M",
             "references": {
@@ -331,7 +379,9 @@
             "access": "Yes",
             "announced": "September 13, 2020",
             "creator": "AI4Bharat",
-            "languages": "12",
+            "languages": {
+                "human": 12
+            },
             "name": "IndicBERT",
             "parameters": "33M",
             "references": {
@@ -346,7 +396,9 @@
             "access": "Yes",
             "announced": "November 13, 2022",
             "creator": "AI4Bharat",
-            "languages": "24",
+            "languages": {
+                "human": 24
+            },
             "name": "IndicBERT v2",
             "parameters": "278M",
             "references": {
@@ -361,7 +413,9 @@
             "access": "Yes",
             "announced": "March 19, 2021",
             "creator": "Google",
-            "languages": "17",
+            "languages": {
+                "human": 17
+            },
             "name": "MuRIL",
             "parameters": "236M",
             "references": {
@@ -380,7 +434,9 @@
                 "Facebook",
                 "University of Washington"
             ],
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "RoBERTa",
             "parameters": "355M",
             "references": {
@@ -393,7 +449,9 @@
             "access": "Yes",
             "announced": "January 22, 2019",
             "creator": "Facebook",
-            "languages": "15",
+            "languages": {
+                "human": 15
+            },
             "name": "XLM-15",
             "parameters": "250M",
             "references": {
@@ -407,7 +465,9 @@
             "access": "Yes",
             "announced": "August 17, 2019",
             "creator": "Facebook",
-            "languages": "17",
+            "languages": {
+                "human": 17
+            },
             "name": "XLM-17",
             "parameters": "570M",
             "references": {
@@ -420,7 +480,9 @@
             "access": "Yes",
             "announced": "August 17, 2019",
             "creator": "Facebook",
-            "languages": "100",
+            "languages": {
+                "human": 100
+            },
             "name": "XLM-100",
             "parameters": "570M",
             "references": {
@@ -433,7 +495,9 @@
             "access": "Yes",
             "announced": "November 5, 2019",
             "creator": "Facebook",
-            "languages": "100",
+            "languages": {
+                "human": 100
+            },
             "name": "XLM-R",
             "parameters": "550M",
             "references": {
@@ -449,7 +513,9 @@
                 "Carnegie Mellon University",
                 "Google Brain"
             ],
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "XLNet-Large",
             "parameters": "360M",
             "references": {
@@ -462,9 +528,11 @@
             "access": "No",
             "announced": "December 1, 2021",
             "creator": "Anthropic",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Anthropic-LM",
-            "parameters": "52B",
+            "parameters": ["52B", "13B", "2.7B", "810M", "197M", "42M", "13M"],
             "references": {
                 "arxiv": "2112.00861"
             },
@@ -492,7 +560,9 @@
             "access": "No",
             "announced": "March 29, 2022",
             "creator": "DeepMind",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Chinchilla",
             "parameters": "70B",
             "references": {
@@ -523,7 +593,9 @@
             "access": "Yes",
             "announced": "March 25, 2022",
             "creator": "Salesforce",
-            "languages": "Code",
+            "languages": {
+                "code": "1+"
+            },
             "name": "CodeGen",
             "parameters": "16.1B",
             "references": {
@@ -536,7 +608,9 @@
             "access": "API",
             "announced": "July 7, 2021",
             "creator": "OpenAI",
-            "languages": "Code",
+            "languages": {
+                "code": "1+"
+            },
             "name": "Codex",
             "parameters": "12B",
             "references": {
@@ -550,9 +624,11 @@
             "access": "API",
             "announced": "November 15, 2021",
             "creator": "Cohere",
-            "languages": "English",
-            "name": "Cohere large",
-            "parameters": "13.1B",
+            "languages": {
+                "human": ["English"]
+            },
+            "name": "Cohere",
+            "parameters": ["13.1B", "6.1B", "410M"],
             "references": {
                 "url": "https://txt.cohere.ai/the-cohere-platform-is-now-publicly-available-2/"
             },
@@ -563,7 +639,9 @@
             "access": "API",
             "announced": "February 28, 2022",
             "creator": "Cohere",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Cohere xlarge",
             "parameters": "52.4B",
             "references": {
@@ -576,7 +654,9 @@
             "access": "Yes",
             "announced": "December 1, 2020",
             "creator": "Tsinghua University",
-            "languages": "Chinese",
+            "languages": {
+                "human": ["Chinese"]
+            },
             "name": "CPM-1",
             "parameters": "2.6B",
             "references": {
@@ -590,7 +670,9 @@
             "access": "Yes",
             "announced": "November 1, 2019",
             "creator": "Microsoft",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "DialoGPT",
             "parameters": "762M",
             "references": {
@@ -603,7 +685,9 @@
             "access": "Yes",
             "announced": "December 20, 2021",
             "creator": "Meta",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "FairSeq Dense",
             "parameters": ["13B", "6.7B", "2.7B", "1.3B", "355M", "125M"],
             "references": {
@@ -617,7 +701,9 @@
             "access": "Requestable",
             "announced": "December 20, 2021",
             "creator": "Meta",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "FairSeq Sparse",
             "parameters": ["1100B", "207B", "52B", "15B"],
             "tags": ["MoE"],
@@ -632,7 +718,9 @@
             "access": "Yes",
             "announced": "November 16, 2022",
             "creator": "Meta",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Galactica",
             "parameters": ["120B", "30B", "6.7B", "1.3B", "125M"],
             "references": {
@@ -648,7 +736,9 @@
             "access": "No",
             "announced": "December 13, 2021",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GLaM (MoE)",
             "parameters": ["1200B", "143B", "105B", "53B", "27B", "20B", "1.9B"],
             "tags": ["MoE"],
@@ -662,7 +752,9 @@
             "access": "No",
             "announced": "December 13, 2021",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GLaM (Dense)",
             "parameters": ["137B", "8B", "1.7B", "0.1B"],
             "references": {
@@ -675,7 +767,9 @@
             "access": "Yes",
             "announced": "August 4, 2022",
             "creator": "Tsinghua University",
-            "languages": ["English", "Chinese"],
+            "languages": {
+                "human": ["English", "Chinese"]
+            },
             "name": "GLM-130B",
             "parameters": "130B",
             "references": {
@@ -689,7 +783,9 @@
             "access": "No",
             "announced": "December 8, 2021",
             "creator": "DeepMind",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Gopher",
             "parameters": "280B",
             "references": {
@@ -702,7 +798,9 @@
             "access": "Yes",
             "announced": "June 11, 2018",
             "creator": "OpenAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-1",
             "parameters": "117M",
             "references": {
@@ -715,7 +813,9 @@
             "access": "Yes",
             "announced": "February 14, 2019",
             "creator": "OpenAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-2",
             "parameters": ["1.542B", "762M", "345M", "117M"],
             "references": {
@@ -728,7 +828,9 @@
             "access": "API",
             "announced": "May 28, 2020",
             "creator": "OpenAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-3",
             "parameters": ["175B", "13B", "6.7B", "2.7B", "1.3B", "760M", "350M", "125M"],
             "references": {
@@ -745,7 +847,9 @@
             "access": "Online",
             "announced": "March 14, 2023",
             "creator": "OpenAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-4",
             "parameters": "?",
             "references": {
@@ -758,7 +862,9 @@
             "access": "Yes",
             "announced": "March 22, 2021",
             "creator": "EleutherAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-Neo",
             "parameters": ["2.7B", "1.3B", "350M", "125M"],
             "references": {
@@ -772,7 +878,9 @@
             "access": "Yes",
             "announced": "April 14, 2022",
             "creator": "EleutherAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-NeoX",
             "parameters": "20B",
             "references": {
@@ -786,7 +894,9 @@
             "access": "Yes",
             "announced": "June 4, 2021",
             "creator": "EleutherAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-J",
             "parameters": "6B",
             "references": {
@@ -799,7 +909,9 @@
             "access": "Yes",
             "announced": "November 29, 2022",
             "creator": "Together",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-JT",
             "parameters": "6B",
             "references": {
@@ -812,7 +924,9 @@
             "access": "Requestable",
             "announced": "January 23, 2023",
             "creator": "AI Sweden",
-            "languages": "5",
+            "languages": {
+                "human": 5
+            },
             "name": "GPT-SW3",
             "parameters": "20B",
             "references": {
@@ -825,7 +939,9 @@
             "access": "Yes",
             "announced": "February 15, 2022",
             "creator": "AI Sweden",
-            "languages": "Swedish",
+            "languages": {
+                "human": ["Swedish"]
+            },
             "name": "GPT-SW3 v1",
             "parameters": "3.5B",
             "references": {
@@ -842,7 +958,9 @@
             "access": "Yes",
             "announced": "May 29, 2019",
             "creator": "University of Washington",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Grover-Mega",
             "parameters": "1.5B",
             "references": {
@@ -855,7 +973,9 @@
             "access": "No",
             "announced": "September 10, 2021",
             "creator": "Naver",
-            "languages": "Korean",
+            "languages": {
+                "human": ["Korean"]
+            },
             "name": "HyperCLOVA",
             "parameters": "82B",
             "references": {
@@ -868,7 +988,9 @@
             "access": "API",
             "announced": "August 12, 2021",
             "creator": "AI21 Labs",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Jurassic-1",
             "parameters": ["178B", "17B", "7.5B"],
             "references": {
@@ -881,7 +1003,9 @@
             "access": "No",
             "announced": "May 18, 2021",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "LaMDA (PT)",
             "parameters": "137B",
             "references": {
@@ -895,7 +1019,9 @@
             "access": "Requestable",
             "announced": "February 24, 2023",
             "creator": "Meta",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "LLaMA",
             "parameters": ["65.2B", "32.5B", "13.0B", "6.7B"],
             "references": {
@@ -912,7 +1038,9 @@
             "access": "API",
             "announced": "August 15, 2022",
             "creator": "Aleph Alpha",
-            "languages": "5",
+            "languages": {
+                "human": 5
+            },
             "name": "Luminous",
             "parameters": ["70B", "30B", "13B"],
             "references": {
@@ -925,7 +1053,9 @@
             "access": "No",
             "announced": "January 27, 2020",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Meena",
             "parameters": "2.6B",
             "references": {
@@ -938,7 +1068,9 @@
             "access": "Yes",
             "announced": "April 15, 2022",
             "creator": "Sberbank",
-            "languages": "60",
+            "languages": {
+                "human": 60
+            },
             "name": "mGPT",
             "parameters": ["13B", "1.3B"],
             "references": {
@@ -954,7 +1086,9 @@
             "access": "Yes",
             "announced": "August 26, 2021",
             "creator": "Stanford University",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Mistral",
             "parameters": ["355M", "124M"],
             "references": {
@@ -970,7 +1104,9 @@
                 "Microsoft",
                 "NVIDIA"
             ],
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Megatron-Turing NLG",
             "parameters": "530B",
             "references": {
@@ -984,7 +1120,9 @@
             "access": "Online, requestable",
             "announced": "May 3, 2022",
             "creator": "Meta",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "OPT",
             "parameters": ["175B", "66B", "30B", "13B", "6.7B", "2.7B", "1.3B", "350M", "125M"],
             "references": {
@@ -1002,7 +1140,9 @@
             "access": "Online, API",
             "announced": "October 16, 2021",
             "creator": "LightOn",
-            "languages": "French",
+            "languages": {
+                "human": ["French"]
+            },
             "name": "PAGnol",
             "parameters": "1.5B",
             "references": {
@@ -1018,9 +1158,11 @@
             "access": "No",
             "announced": "April 26, 2021",
             "creator": "PanGu-α Team",
-            "languages": "Chinese",
+            "languages": {
+                "human": ["Chinese"]
+            },
             "name": "PanGu-α",
-            "parameters": "200B",
+            "parameters": ["200B", "13B", "2.6B"],
             "references": {
                 "arxiv": "2104.12369"
             },
@@ -1034,7 +1176,9 @@
             "access": "Yes",
             "announced": "February 13, 2023",
             "creator": "EleutherAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Pythia",
             "parameters": ["12B", "6.9B", "2.8B", "1.4B", "1B", "410M", "160M", "70M"],
             "references": {
@@ -1047,7 +1191,9 @@
             "access": "No",
             "announced": "April 5, 2022",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "PaLM",
             "parameters": ["540B", "62B", "8B"],
             "references": {
@@ -1079,7 +1225,9 @@
             "access": "No",
             "announced": "February 13, 2020",
             "creator": "Microsoft",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Turing-NLG",
             "parameters": "17B",
             "references": {
@@ -1092,7 +1240,9 @@
             "access": "No",
             "announced": "October 22, 2022",
             "creator": "Google",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "U-PaLM",
             "parameters": "540B",
             "references": {
@@ -1109,7 +1259,9 @@
             "access": "No",
             "announced": "May 31, 2021",
             "creator": "BAAI",
-            "languages": ["English", "Chinese"],
+            "languages": {
+                "human": ["English", "Chinese"]
+            },
             "name": "Wu Dao 2.0",
             "parameters": "1750B",
             "tags": ["MoE"],
@@ -1123,7 +1275,9 @@
             "access": "Yes",
             "announced": "June 23, 2022",
             "creator": "Yandex",
-            "languages": ["Russian", "English"],
+            "languages": {
+                "human": ["Russian", "English"]
+            },
             "name": "YaLM",
             "parameters": "100B",
             "references": {
@@ -1141,7 +1295,9 @@
             "access": "No",
             "announced": "October 10, 2021",
             "creator": "Inspur",
-            "languages": "Chinese",
+            "languages": {
+                "human": ["Chinese"]
+            },
             "name": "Yuan 1.0",
             "parameters": "245B",
             "references": {
@@ -1158,7 +1314,9 @@
             "announced": "March 13, 2023",
             "creator": "Stanford University",
             "finetuning": "LLaMA (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Alpaca",
             "parameters": "7B",
             "references": {
@@ -1172,7 +1330,9 @@
             "announced": "April 5, 2022",
             "creator": "Meta",
             "finetuning": "OPT (Dialogue)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "BlenderBot 3",
             "parameters": "175B",
             "references": {
@@ -1201,7 +1361,9 @@
             "announced": "November 8, 2022",
             "creator": "Cohere",
             "finetuning": "Cohere xlarge (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Cohere command",
             "parameters": "52.4B",
             "references": {
@@ -1214,7 +1376,9 @@
             "announced": "September 3, 2021",
             "creator": "Google",
             "finetuning": "LaMDA-PT (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "FLAN",
             "parameters": "137B",
             "references": {
@@ -1227,7 +1391,9 @@
             "announced": "October 20, 2022",
             "creator": "Google",
             "finetuning": "PaLM (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Flan-PaLM",
             "parameters": ["540B", "62B"],
             "references": {
@@ -1240,7 +1406,9 @@
             "announced": "October 20, 2022",
             "creator": "Google",
             "finetuning": "U-PaLM (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Flan-U-PaLM",
             "parameters": "540B",
             "references": {
@@ -1253,7 +1421,9 @@
             "announced": "March 10, 2023",
             "creator": "Together",
             "finetuning": "GPT-NeoX (Dialogue)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "GPT-NeoXT-Chat-Base",
             "parameters": "20B",
             "references": {
@@ -1266,7 +1436,9 @@
             "announced": "March 4, 2022",
             "creator": "OpenAI",
             "finetuning": "GPT-3 (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "InstructGPT-3 (SFT)",
             "parameters": "175B",
             "references": {
@@ -1279,7 +1451,9 @@
             "announced": "May 18, 2021",
             "creator": "Google",
             "finetuning": "LaMDA-PT (Dialogue)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "LaMDA",
             "parameters": "137B",
             "references": {
@@ -1293,7 +1467,9 @@
             "announced": "December 22, 2022",
             "creator": "Meta",
             "finetuning": "OPT (Instruction)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "OPT-IML",
             "parameters": ["175B", "30B"],
             "references": {
@@ -1305,7 +1481,9 @@
             "access": "Online, API",
             "announced": "April 12, 2022",
             "creator": "Anthropic",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "Anthropic-LM v4-s3",
             "parameters": "52B",
             "references": {
@@ -1318,7 +1496,9 @@
             "access": "API",
             "announced": "March 4, 2022",
             "creator": "OpenAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "InstructGPT-3 (PPO)",
             "parameters": "175B",
             "references": {
@@ -1331,7 +1511,9 @@
             "access": "Yes",
             "announced": "March 13, 2023",
             "creator": "Tsinghua University",
-            "languages": ["Chinese", "English"],
+            "languages": {
+                "human": ["Chinese", "English"]
+            },
             "name": "ChatGLM-6B",
             "parameters": "6.2B",
             "references": {
@@ -1344,20 +1526,24 @@
             "access": "Online, API",
             "announced": "November 30, 2022",
             "creator": "OpenAI",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "name": "ChatGPT",
-            "parameters": "175B",
+            "parameters": "?",
             "references": {
                 "url": "https://openai.com/blog/chatgpt"
             },
-            "rlhf": "GPT-3.5",
+            "rlhf": "GPT-3.5?",
             "type": "Decoder"
         },
         {
             "access": "Yes",
             "announced": "November 10, 2019",
             "creator": ["Facebook", "Inria", "Sorbonne Université"],
-            "languages": "French",
+            "languages": {
+                "human": ["French"]
+            },
             "name": "CamemBERT",
             "parameters": "110M",
             "references": {
@@ -1372,7 +1558,9 @@
             "access": "Yes",
             "announced": "November 10, 2019",
             "creator": ["Facebook", "Inria", "Sorbonne Université"],
-            "languages": "French",
+            "languages": {
+                "human": ["French"]
+            },
             "name": "CamemBERT-large",
             "parameters": "335M",
             "references": {
@@ -1388,7 +1576,9 @@
             "announced": "October 2, 2019",
             "creator": "HuggingFace",
             "name": "DistilBERT",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": "66M",
             "finetuning": "BERT-base (Distillation)",
             "references": {
@@ -1401,7 +1591,9 @@
             "announced": "October 17, 2022",
             "creator": "Stanford University",
             "name": "DRAGON",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": "360M",
             "trained_on": ["BookCorpus"],
             "references": {
@@ -1416,7 +1608,9 @@
             "announced": "December 15, 2022",
             "creator": ["Stanford University", "MosaicML"],
             "name": "BioMedLM (PubMed GPT)",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": "2.7B",
             "references": {
                 "url": "https://crfm.stanford.edu/2022/12/15/pubmedgpt.html"
@@ -1430,7 +1624,9 @@
             "announced": "March 29, 2022",
             "creator": ["Stanford University"],
             "name": "LinkBERT",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["340M", "110M"],
             "references": {
                 "arxiv": "2203.15827",
@@ -1444,7 +1640,9 @@
             "announced": "March 29, 2022",
             "creator": ["Stanford University"],
             "name": "BioLinkBERT",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["340M", "110M"],
             "references": {
                 "arxiv": "2203.15827",
@@ -1459,7 +1657,9 @@
             "announced": "December 26, 2022",
             "creator": ["Google", "DeepMind"],
             "name": "Med-PaLM",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": "540B",
             "finetuning": "PaLM (Instruction prompt)",
             "references": {
@@ -1473,7 +1673,9 @@
             "announced": "March 14, 2023",
             "creator": ["Google", "DeepMind"],
             "name": "Med-PaLM 2",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": "540B",
             "finetuning": "PaLM (?)",
             "references": {
@@ -1487,7 +1689,9 @@
             "announced": "February 21, 2023",
             "creator": ["Stanford University"],
             "name": "Hyena",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["125M", "153M", "355M"],
             "trained_on": "The Pile",
             "references": {
@@ -1501,7 +1705,9 @@
             "announced": "October 20, 2022",
             "creator": "Peng Bo",
             "name": "RWKV-4",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["14B"],
             "trained_on": "The Pile",
             "references": {
@@ -1516,7 +1722,9 @@
             "announced": "September 23, 2022",
             "creator": "Peng Bo",
             "name": "RWKV-4",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["7B"],
             "trained_on": "The Pile",
             "references": {
@@ -1531,7 +1739,9 @@
             "announced": "December 28, 2022",
             "creator": "Stanford University",
             "name": "H3",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["2.7B", "1.3B", "355M", "125M"],
             "trained_on": "The Pile",
             "references": {
@@ -1547,7 +1757,9 @@
             "announced": "December 28, 2022",
             "creator": ["Google", "Tel Aviv University", "Boston University"],
             "name": "GSS",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["352M", "192M"],
             "trained_on": "Several",
             "references": {
@@ -1561,7 +1773,9 @@
             "announced": "October 31, 2021",
             "creator": ["Stanford University"],
             "name": "S4",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["249M"],
             "trained_on": "Several",
             "references": {
@@ -1575,7 +1789,9 @@
             "announced": "September 17, 2019",
             "creator": "NVIDIA",
             "name": "Megatron-LM",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["8.3B", "2.5B", "355M"],
             "trained_on": ["Wikipedia", "CC-Stories", "RealNews", "OpenWebText"],
             "references": {
@@ -1589,7 +1805,9 @@
             "announced": "September 17, 2019",
             "creator": "NVIDIA",
             "name": "Megatron-LM",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["3.9B", "1.3B", "336M"],
             "trained_on": ["Wikipedia", "CC-Stories", "RealNews", "OpenWebText"],
             "references": {
@@ -1603,7 +1821,9 @@
             "announced": "March 17, 2023",
             "creator": "Google",
             "name": "CoLT-5",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["5.297B", "1.462B", "433M"],
             "trained_on": "",
             "references": {
@@ -1616,7 +1836,9 @@
             "announced": "December 15, 2021",
             "creator": "Google",
             "name": "LongT5",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["3B", "780M", "250M"],
             "trained_on": "C4",
             "references": {
@@ -1630,7 +1852,9 @@
             "announced": "December 18, 2019",
             "creator": "Google",
             "name": "PEGASUS",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["568M", "223M"],
             "trained_on": ["C4", "HugeNews"],
             "references": {
@@ -1644,7 +1868,9 @@
             "announced": "February 15, 2018",
             "creator": "Allen Institute for AI",
             "name": "ELMo",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["93.6M"],
             "trained_on": ["1B Word Benchmark"],
             "references": {
@@ -1658,7 +1884,9 @@
             "announced": "February 17, 2022",
             "creator": "Google",
             "name": "ST-MoE",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["269B", "4.1B"],
             "trained_on": ["C4"],
             "references": {
@@ -1672,7 +1900,9 @@
             "announced": "February 17, 2022",
             "creator": "Google",
             "name": "Dense-L",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["0.8B"],
             "trained_on": ["C4"],
             "references": {
@@ -1685,7 +1915,9 @@
             "announced": "January 11, 2021",
             "creator": "Google",
             "name": "Switch",
-            "languages": "English",
+            "languages": {
+                "human": ["English"]
+            },
             "parameters": ["1571B", "395B", "26B", "7B"],
             "trained_on": "C4",
             "references": {
@@ -1694,6 +1926,85 @@
             },
             "type": "Encoder-Decoder",
             "tags": ["MoE"]
+        },
+        {
+            "access": "Yes",
+            "announced": "May 28, 2021",
+            "creator": "Apple",
+            "name": "AFT(-conv)",
+            "languages": {
+                "human": ["English"]
+            },
+            "parameters": ["125M"],
+            "trained_on": "",
+            "references": {
+                "arxiv": "2105.14103"
+            },
+            "type": "Decoder",
+            "tags": ["non-transformer"]
+        },
+        {
+            "access": "Yes",
+            "announced": "March 16, 2022",
+            "creator": "Google",
+            "name": "Memorizing Transformer",
+            "parameters": ["8B", "1B", "200M"],
+            "trained_on": "C4",
+            "languages": {
+                "human": ["English"]
+            },
+            "references": {
+                "arxiv": "2203.08913"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "PanGu-Σ",
+            "access": "No",
+            "announced": "March 20, 2023",
+            "creator": "Huawei",
+            "parameters": ["1085B"],
+            "trained_on": ["WuDaoCorpora 2.0", "CLUECorpus2020", "The Pile", "PanGu-Coder", "GHTorrent"],
+            "languages": {
+                "human": ["Chinese", "English"],
+                "code": ["Python", "Java"]
+            },
+            "references": {
+                "arxiv": "2303.10845"
+            },
+            "type": "Decoder",
+            "tags": ["MoE"]
+        },
+        {
+            "name": "PanGu-Coder",
+            "access": "No",
+            "announced": "July 22, 2022",
+            "creator": "Huawei",
+            "parameters": ["2.6B", "317M"],
+            "trained_on": ["GHTorrent"],
+            "languages": {
+                "code": ["Python"]
+            },
+            "references": {
+                "arxiv": "2207.11280"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "GraphCodeBERT",
+            "access": "Yes",
+            "announced": "September 17, 2020",
+            "creator": ["Microsoft"],
+            "parameters": ["124M"],
+            "trained_on": "CodeSearchNet",
+            "languages": {
+                "code": 6
+            },
+            "references": {
+                "arxiv": "2009.08366",
+                "huggingface": "microsoft/graphcodebert-base"
+            },
+            "type": "Encoder"
         }
     ]
 ]

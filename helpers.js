@@ -1,5 +1,14 @@
 const parseDate = d3.timeParse("%B %d, %Y");
 
+function parse_langs(obj, word, res) {
+    if (Array.isArray(obj)) {
+        if (obj.length == 1) res.push(obj[0])
+        else res.push(`${word}<sup>${obj.join(" + ")}</sup>`)
+    }
+    else res.push(`${word}<sup>${obj}</sup>`)
+    return res
+}
+
 function clean(data, split=false) {
 
     // split different param sizes into their own entries
@@ -51,17 +60,14 @@ function clean(data, split=false) {
             parsed: d.parameters_parsed
         }
 
-        if (Array.isArray(d.languages)) {
-            d.languages_parsed = d.languages.join(" + ")
+        d.languages_parsed = []
+        if ('human' in d.languages) {
+            d.languages_parsed = parse_langs(d.languages.human, "Multilingual", d.languages_parsed)
         }
-        else if (typeof d.languages === "object") {
-            if ('human' in d.languages) d.languages_parsed = `Multilingual<sup>${d.languages.human}</sup> + Code<sup>${d.languages.code}</sup>`
-            else d.languages_parsed = `Code<sup>${d.languages.code}</sup>`
+        if ('code' in d.languages) {
+            d.languages_parsed = parse_langs(d.languages.code, "Code", d.languages_parsed)
         }
-        else if (!isNaN(parseInt(d.languages))) {
-            d.languages_parsed = `Multilingual<sup>${d.languages}</sup>`
-        }
-        else d.languages_parsed = d.languages
+        d.languages_parsed = d.languages_parsed.join(' + ')
 
         if (Array.isArray(d.creator)) d.creator_parsed = d.creator.join(", ")
         else d.creator_parsed = d.creator
