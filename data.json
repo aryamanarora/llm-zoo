@@ -2005,6 +2005,249 @@
                 "huggingface": "microsoft/graphcodebert-base"
             },
             "type": "Encoder"
+        },
+        {
+            "name": "CerebrasGPT",
+            "access": "Yes",
+            "announced": "March 28, 2023",
+            "creator": ["Cerebras"],
+            "parameters": ["13B", "6.7B", "2.7B", "1.3B", "590M", "256M", "111M"],
+            "languages": {
+                "human": ["English"]
+            },
+            "trained_on": ["The Pile"],
+            "references": {
+                "huggingface": "cerebras/Cerebras-GPT-13B",
+                "url": "https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "BloombergGPT",
+            "access": "No",
+            "announced": "March 30, 2023",
+            "creator": ["Bloomberg"],
+            "parameters": ["50B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "trained_on": ["Financial datasets", "The Pile", "C4", "Wikipedia"],
+            "tokens": "708.9M",
+            "references": {
+                "arxiv": "2303.17564"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Vicuna",
+            "access": "Yes",
+            "announced": "March 30, 2023",
+            "creator": ["LMSYS"],
+            "parameters": ["7B", "13B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "finetuning": ["LLaMA (dialogue)"],
+            "references": {
+                "url": "https://lmsys.org/blog/2023-03-30-vicuna/",
+                "huggingface": "lmsys/vicuna-13b-delta-v0"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Koala",
+            "access": "Yes",
+            "announced": "April 3, 2023",
+            "creator": ["BAIR"],
+            "parameters": ["13B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "finetuning": ["LLaMA (dialogue)"],
+            "references": {
+                "url": "https://bair.berkeley.edu/blog/2023/04/03/koala/",
+                "huggingface": "young-geng/koala",
+                "github": "young-geng/EasyLM"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Open-Assistant SFT-1 12B",
+            "access": "Yes",
+            "announced": "March 11, 2023",
+            "creator": ["Open Assistant"],
+            "parameters": ["12B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "finetuning": ["Pythia-12B (dialogue)"],
+            "references": {
+                "huggingface": "OpenAssistant/oasst-sft-1-pythia-12b"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "FastChat-T5",
+            "access": "Yes",
+            "announced": "April 28, 2023",
+            "creator": ["LMSYS"],
+            "parameters": ["3B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "finetuning": ["T5 (dialogue)"],
+            "references": {
+                "huggingface": "lmsys/fastchat-t5-3b-v1.0"
+            },
+            "type": "Encoder-Decoder"
+        },
+        {
+            "name": "Dolly",
+            "access": "Yes",
+            "announced": "March 24, 2023",
+            "creator": ["DataBricks"],
+            "parameters": ["6B"],
+            "languages": {
+                "human": "English"
+            },
+            "finetuning": ["GPT-J-6B (dialogue)"],
+            "references": {
+                "huggingface": "databricks/dolly-v1-6B",
+                "url": "https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Dolly 2.0",
+            "access": "Yes",
+            "announced": "April 12, 2023",
+            "creator": ["DataBricks"],
+            "parameters": ["12B"],
+            "languages": {
+                "human": "English"
+            },
+            "finetuning": ["Pythia (dialogue)"],
+            "references": {
+                "huggingface": "databricks/dolly-v2-12B",
+                "url": "https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "StarCoderBase",
+            "access": "Yes",
+            "announced": "May 4, 2023",
+            "creator": "BigScience",
+            "parameters": ["15.5B"],
+            "languages": {
+                "code": 88
+            },
+            "trained_on": ["The Stack"],
+            "tokens": "1T",
+            "references": {
+                "url": "https://drive.google.com/file/d/1cN-b9GnWtHzQRoE7M7gAEyivY0kl4BYs/view",
+                "huggingface": "bigcode/starcoderbase"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "StarCoder",
+            "access": "Yes",
+            "announced": "May 4, 2023",
+            "creator": "BigScience",
+            "parameters": ["15.5B"],
+            "languages": {
+                "code": 88
+            },
+            "finetuning": "StarCoderBase (Python data)",
+            "tokens": "1T",
+            "references": {
+                "url": "https://drive.google.com/file/d/1cN-b9GnWtHzQRoE7M7gAEyivY0kl4BYs/view",
+                "huggingface": "bigcode/starcoder"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "StableLM-Alpha",
+            "access": "Yes",
+            "announced": "April 20, 2023",
+            "creator": "Stability AI",
+            "parameters": ["3B", "7B"],
+            "languages": {
+                "human": "English"
+            },
+            "trained_on": ["The Pile"],
+            "tokens": "800B",
+            "references": {
+                "github": "stability-AI/stableLM",
+                "huggingface": "stabilityai/stablelm-base-alpha-7b"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "StableLM-Tuned-Alpha",
+            "access": "Yes",
+            "announced": "April 20, 2023",
+            "creator": "Stability AI",
+            "parameters": ["3B", "7B"],
+            "languages": {
+                "human": "English"
+            },
+            "finetuning": "StableLM-Alpha (Dialogue)",
+            "tokens": "800B",
+            "references": {
+                "github": "stability-AI/stableLM",
+                "huggingface": "stabilityai/stablelm-tuned-alpha-7b"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "StableVicuna",
+            "access": "Yes",
+            "announced": "April 28, 2023",
+            "creator": ["Stability AI", "CarperAI"],
+            "parameters": "13B",
+            "languages": {
+                "human": "English"
+            },
+            "rlhf": "Vicuna",
+            "references": {
+                "github": "stability-AI/stableLM",
+                "huggingface": "CarperAI/stable-vicuna-13b-delta"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Sparrow",
+            "access": "No",
+            "announced": "September 28, 2022",
+            "creator": ["DeepMind"],
+            "parameters": "70B",
+            "languages": {
+                "human": "English"
+            },
+            "rlhf": "Chinchilla",
+            "references": {
+                "arxiv": "2209.14375",
+                "url": "https://www.deepmind.com/blog/building-safer-dialogue-agents"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "replit-code-v1-3b",
+            "access": "Yes",
+            "announced": "May 2, 2023",
+            "creator": ["Replit"],
+            "parameters": "3B",
+            "languages": {
+                "code": 20
+            },
+            "trained_on": ["The Stack"],
+            "tokens": "525B",
+            "references": {
+                "huggingface": "replit/replit-code-v1-3b"
+            },
+            "type": "Decoder"
         }
     ]
 ]
