@@ -1417,6 +1417,7 @@
             "type": "Decoder"
         },
         {
+            "name": "GPT-NeoXT-Chat-Base",
             "access": "Yes",
             "announced": "March 10, 2023",
             "creator": "Together",
@@ -1424,10 +1425,26 @@
             "languages": {
                 "human": ["English"]
             },
-            "name": "GPT-NeoXT-Chat-Base",
             "parameters": "20B",
             "references": {
-                "url": "https://www.together.xyz/blog/openchatkit"
+                "url": "https://www.together.xyz/blog/openchatkit",
+                "huggingface": "togethercomputer/GPT-NeoXT-Chat-Base-20B"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Pythia-Chat-Base",
+            "access": "Yes",
+            "announced": "March 30, 2023",
+            "creator": "Together",
+            "finetuning": "Pythia (Dialogue)",
+            "languages": {
+                "human": ["English"]
+            },
+            "parameters": "7B",
+            "references": {
+                "url": "https://www.together.xyz/blog/openchatkit-016",
+                "huggingface": "togethercomputer/Pythia-Chat-Base-7B"
             },
             "type": "Decoder"
         },
@@ -2036,7 +2053,8 @@
             "references": {
                 "arxiv": "2303.17564"
             },
-            "type": "Decoder"
+            "type": "Decoder",
+            "tags": ["finance"]
         },
         {
             "name": "Vicuna",
@@ -2108,7 +2126,7 @@
             "creator": ["DataBricks"],
             "parameters": ["6B"],
             "languages": {
-                "human": "English"
+                "human": ["English"]
             },
             "finetuning": ["GPT-J-6B (dialogue)"],
             "references": {
@@ -2124,7 +2142,7 @@
             "creator": ["DataBricks"],
             "parameters": ["12B"],
             "languages": {
-                "human": "English"
+                "human": ["English"]
             },
             "finetuning": ["Pythia (dialogue)"],
             "references": {
@@ -2174,7 +2192,7 @@
             "creator": "Stability AI",
             "parameters": ["3B", "7B"],
             "languages": {
-                "human": "English"
+                "human": ["English"]
             },
             "trained_on": ["The Pile"],
             "tokens": "800B",
@@ -2191,7 +2209,7 @@
             "creator": "Stability AI",
             "parameters": ["3B", "7B"],
             "languages": {
-                "human": "English"
+                "human": ["English"]
             },
             "finetuning": "StableLM-Alpha (Dialogue)",
             "tokens": "800B",
@@ -2208,7 +2226,7 @@
             "creator": ["Stability AI", "CarperAI"],
             "parameters": "13B",
             "languages": {
-                "human": "English"
+                "human": ["English"]
             },
             "rlhf": "Vicuna",
             "references": {
@@ -2224,7 +2242,7 @@
             "creator": ["DeepMind"],
             "parameters": "70B",
             "languages": {
-                "human": "English"
+                "human": ["English"]
             },
             "rlhf": "Chinchilla",
             "references": {
@@ -2246,6 +2264,255 @@
             "tokens": "525B",
             "references": {
                 "huggingface": "replit/replit-code-v1-3b"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "PaLM-2",
+            "access": "No",
+            "announced": "May 10, 2023",
+            "creator": ["Google"],
+            "parameters": ["?", "?", "?"],
+            "languages": {
+                "human": "'hundreds'",
+                "code": "at least 10"
+            },
+            "trained_on": "?",
+            "tokens": ["?", "?", "?"],
+            "references": {
+                "url": "https://ai.google/static/documents/palm2techreport.pdf"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "OLMo",
+            "access": "No",
+            "announced": "May 11, 2023",
+            "creator": ["Allen Institute of AI"],
+            "parameters": "?",
+            "languages": {
+                "human": "?"
+            },
+            "trained_on": "?",
+            "tokens": "?",
+            "references": {
+                "url": "https://blog.allenai.org/announcing-ai2-olmo-an-open-language-model-made-by-scientists-for-scientists-ab761e4e9b76"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "RedPajama-INCITE-Base",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["Together"],
+            "parameters": ["2.8B", "6.9B"],
+            "languages": {
+                "human": ["English"],
+                "code": "?"
+            },
+            "trained_on": ["RedPajama"],
+            "tokens": ["800B", "800B"],
+            "references": {
+                "huggingface": "togethercomputer/RedPajama-INCITE-Base-7B-v0.1",
+                "url": "https://www.together.xyz/blog/redpajama-models-v1"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "RedPajama-INCITE-Instruct",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["Together"],
+            "parameters": ["2.8B", "6.9B"],
+            "languages": {
+                "human": ["English"],
+                "code": "?"
+            },
+            "finetuning": "RedPajama-INCITE-Base (Instruction)",
+            "references": {
+                "huggingface": "togethercomputer/RedPajama-INCITE-Instruct-7B-v0.1",
+                "url": "https://www.together.xyz/blog/redpajama-models-v1"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "RedPajama-INCITE-Chat",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["Together"],
+            "parameters": ["2.8B", "6.9B"],
+            "languages": {
+                "human": ["English"],
+                "code": "?"
+            },
+            "finetuning": "RedPajama-INCITE-Base (Dialogue)",
+            "references": {
+                "huggingface": "togethercomputer/RedPajama-INCITE-Chat-7B-v0.1",
+                "url": "https://www.together.xyz/blog/redpajama-models-v1"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "MPT-7B Base",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["MosaicML"],
+            "parameters": ["7B"],
+            "languages": {
+                "human": "?",
+                "code": "18"
+            },
+            "trained_on": ["mC4", "C4", "RedPajama", "The Stack", "Semantic Scholar ORC"],
+            "references": {
+                "url": "https://www.mosaicml.com/blog/mpt-7b",
+                "huggingface": "mosaicml/mpt-7b"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "MPT-7B-StoryWriter-65k+",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["MosaicML"],
+            "parameters": ["7B"],
+            "languages": {
+                "human": "?",
+                "code": "18"
+            },
+            "finetuning": "MPT-7B Base (books3 + long context)",
+            "references": {
+                "url": "https://www.mosaicml.com/blog/mpt-7b",
+                "huggingface": "mosaicml/mpt-7b-storywriter"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "MPT-7B-Instruct",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["MosaicML"],
+            "parameters": ["7B"],
+            "languages": {
+                "human": "?",
+                "code": "18"
+            },
+            "finetuning": "MPT-7B Base (Instruction)",
+            "references": {
+                "url": "https://www.mosaicml.com/blog/mpt-7b",
+                "huggingface": "mosaicml/mpt-7b-instruct"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "MPT-7B-Chat",
+            "access": "Yes",
+            "announced": "May 5, 2023",
+            "creator": ["MosaicML"],
+            "parameters": ["7B"],
+            "languages": {
+                "human": "?",
+                "code": "18"
+            },
+            "finetuning": "MPT-7B Base (Dialogue)",
+            "references": {
+                "url": "https://www.mosaicml.com/blog/mpt-7b",
+                "huggingface": "mosaicml/mpt-7b-chat"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "RWKV-4 \"Raven\"",
+            "access": "Yes",
+            "announced": "April 1, 2023",
+            "creator": ["Peng Bo"],
+            "parameters": ["1.5B", "3B", "7B", "14B"],
+            "languages": {
+                "human": "mostly English"
+            },
+            "finetuning": "RWKV-4 (Dialogue)",
+            "references": {
+                "huggingface": "BlinkDL/rwkv-4-raven"
+            },
+            "type": "Decoder",
+            "tags": ["non-transformer"]
+        },
+        {
+            "name": "BiGS",
+            "access": "Yes",
+            "announced": "December 20, 2022",
+            "creator": ["Cornell University", "DeepMind"],
+            "parameters": ["119M", "350M"],
+            "languages": {
+                "human": ["English"]
+            },
+            "trained_on": ["?"],
+            "references": {
+                "arxiv": "2212.10544v2",
+                "github": "jxiw/BiGS"
+            },
+            "type": "Encoder",
+            "tags": ["non-transformer"]
+        },
+        {
+            "name": "Scale Donovan",
+            "access": "No",
+            "announced": "May 10, 2023",
+            "creator": ["Scale AI"],
+            "parameters": ["?"],
+            "languages": {
+                "human": "?"
+            },
+            "trained_on": ["?"],
+            "references": {
+                "url": "https://scale.com/blog/scale-ceo-letter-donovan-egp"
+            },
+            "type": "Decoder",
+            "tags": ["military"]
+        },
+        {
+            "name": "Dromedary",
+            "access": "No",
+            "announced": "May 4, 2023",
+            "creator": ["Carnegie Mellon University", "IBM Research", "UMass Amherst"],
+            "parameters": ["65B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "finetuning": "LLaMA (Self-Align)",
+            "references": {
+                "arxiv": "2305.03047"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "Bactrian-X",
+            "access": "Yes",
+            "announced": "April 28, 2023",
+            "creator": ["MBZUAI"],
+            "parameters": ["7B"],
+            "languages": {
+                "human": "52"
+            },
+            "finetuning": "LLaMA (Instruction)",
+            "references": {
+                "huggingface": "MBZUAI/bactrian-x-llama-7b-lora",
+                "github": "MBZUAI-nlp/Bactrian-X"
+            },
+            "type": "Decoder"
+        },
+        {
+            "name": "GPT4All-J",
+            "access": "Yes",
+            "announced": "April 11, 2023",
+            "creator": ["Nomic AI"],
+            "parameters": ["6B"],
+            "languages": {
+                "human": ["English"]
+            },
+            "finetuning": "GPT-J (Dialogue)",
+            "references": {
+                "huggingface": "nomic-ai/gpt4all-j",
+                "github": "nomic-ai/gpt4all"
             },
             "type": "Decoder"
         }

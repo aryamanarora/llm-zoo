@@ -44,9 +44,22 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LLM Zoo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="graph.html">Graph</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
-        <h1>LLM Zoo</h1>
         <p>This is a directory of large language models, presented in table form. You can also view it <a href="graph.html">as an interactive graph</a> or <a href="data.json">download the data</a>.</p>
+        <p class="text-muted small">Updated May 11, 2023. Maintained by <a href="http://aryaman.io/">Aryaman Arora</a>.</p>
         <small>
         <table class="table table-light table-bordered table-sm shadow-sm" id="table" style="width: 100%;"></table>
         </small>
